@@ -62,7 +62,7 @@ export const ArrowCircleRight = (p) => (
 );
 
 export const PersonIcon = (p) => (
-  <image src="/assets/profile.png" width="24" height="24" {...p} />
+  <img src="/assets/profile.png" width="24" height="24" {...p} />
 );
 export const QuestionIcon = (p) => (
   <img src="/assets/question.png" width="24" height="24" alt="" {...p} />

@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useGame } from '../context/GameContext.jsx';
-import { BackIcon, BookIcon, HomeIcon, NotesIcon, SwordIcon, XpMushrooms } from './Icons.jsx';
+import { BackIcon } from './Icons.jsx';
 
 export function TopBar({ title, subtitle }) {
   const navigate = useNavigate();
