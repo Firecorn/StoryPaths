@@ -15,8 +15,6 @@ export default function SignUp() {
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
 
-  // Creates the Firebase account. <GuestOnly> then moves them on to Home, which sends
-  // brand-new accounts to the placement diagnostic first.
   const submit = async (e) => {
     e.preventDefault();
     setError('');

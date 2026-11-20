@@ -8,6 +8,7 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut as fbSignOut,
+  verifyBeforeUpdateEmail,
 } from 'firebase/auth';
 import { deleteDoc, doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase.js';
@@ -150,6 +151,12 @@ export function GameProvider({ children }) {
           return;
         }
       }
+
+      if (fbUser.email && data.user?.email !== fbUser.email) {
+        data = { ...data, user: { ...data.user, email: fbUser.email } };
+        dirty.current = true;
+      }
+      
       uid.current = fbUser.uid;
       dispatch({ type: 'hydrate', data });
       setAuthReady(true);
@@ -203,6 +210,13 @@ export function GameProvider({ children }) {
         await fbSignOut(auth);
       },
       resetPassword: (email) => sendPasswordResetEmail(auth, email),
+      
+      changeEmail: async (newEmail, password) => {
+        const fbUser = auth.currentUser;
+        await reauthenticateWithCredential(fbUser, EmailAuthProvider.credential(fbUser.email, password));
+        await verifyBeforeUpdateEmail(fbUser, newEmail);
+      },
+
       /** Re-checks the password (Firebase requires a recent login), then deletes their data and account. */
       deleteAccount: async (password) => {
         const fbUser = auth.currentUser;

@@ -6,8 +6,6 @@ import { Field } from '../components/Form.jsx';
 import { useGame } from '../context/GameContext.jsx';
 import { authMessage } from '../lib/authErrors.js';
 
-// Not in the Canva set, but the splash screen's "Login" button needs a destination.
-// Built from the Forgot Password layout so it matches.
 export default function Login() {
   const { logIn } = useGame();
   const [form, setForm] = useState({ email: '', password: '' });
@@ -15,7 +13,6 @@ export default function Login() {
   const [busy, setBusy] = useState(false);
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  // On success Firebase signs the student in and <GuestOnly> in App.jsx moves them to Home.
   const submit = async (e) => {
     e.preventDefault();
     setError('');

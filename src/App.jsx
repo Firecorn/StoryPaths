@@ -31,15 +31,6 @@ function GuestOnly({ children }) {
 function Gate({ children }) {
   const { authReady, saveError, signedIn } = useGame();
 
-  if (!firebaseReady) {
-    return (
-      <div className="app splash">
-        <h1>Almost there!</h1>
-        <p>Firebase isn&apos;t set up yet. Copy <code>.env.example</code> to <code>.env</code>, fill in your Firebase values, and restart.</p>
-        <p>See <code>FIREBASE_SETUP.md</code>.</p>
-      </div>
-    );
-  }
   if (!authReady) {
     return <div className="app splash"><p>Loading…</p></div>;
   }

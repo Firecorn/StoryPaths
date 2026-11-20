@@ -2,9 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-// Values come from .env (locally) and Vercel > Settings > Environment Variables (deployed).
-// See FIREBASE_SETUP.md. These web-app keys identify your project; they are not secrets,
-// the Firestore security rules are what protect the data.
+
 const config = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,

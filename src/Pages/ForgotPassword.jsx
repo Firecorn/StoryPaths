@@ -6,11 +6,18 @@ import { BackLink, Clouds } from '../components/AuthParts.jsx';
 export default function ForgotPassword() {
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState({ type: 'idle', text: '' });
 
-  const submit = (e) => {
+
+  const submit = async (e) => {
     e.preventDefault();
-    // TODO: POST to your password-reset endpoint.
-    setSent(true);
+    setStatus({ type: 'loading', text: 'Sending…' });
+    try {
+      await resetPassword(email.trim());
+      setStatus({ type: 'sent', text: 'Check your inbox for a reset link.' });
+    } catch (err) {
+      setStatus({ type: 'error', text: authMessage(err) });
+    }
   };
 
   return (

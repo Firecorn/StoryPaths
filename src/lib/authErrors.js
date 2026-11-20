@@ -10,6 +10,8 @@ const MESSAGES = {
   'auth/network-request-failed': 'No connection. Check your internet and try again.',
   'auth/requires-recent-login': 'For safety, please log out, log back in, and try again.',
   'auth/user-disabled': 'This account has been turned off. Please contact support.',
+  'auth/operation-not-allowed': 'Changing email is not enabled yet. Please contact support.',
+  'auth/missing-email': 'Please enter an email address.',
 };
 
 export const authMessage = (err) =>

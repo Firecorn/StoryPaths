@@ -49,7 +49,7 @@ function Chat({ story }) {
   function advance(nextId, bubbles, grade) {
     if (!story.nodes[nextId]) {
       // "victory" (or any id that isn't a node) ends the quest
-      setMessages((m) => [...m, ...bubbles, msg('npc', 'Quest complete! You read the whole mountain well. 🎉')]);
+      setMessages((m) => [...m, ...bubbles, msg('npc', `Quest complete! You finished "${story.title}" like a pro.🎉`)]);
       setFinished(true);
       return;
     }
