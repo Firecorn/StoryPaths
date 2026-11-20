@@ -633,3 +633,15 @@
   line-height: 1.55;
   color: var(--ink);
 }
+
+/* ================= Diagnostic / no-tab-bar screens ================= */
+.app--nonav {
+  --nav-height: 0px; /* chat footer sits at the very bottom when there is no tab bar */
+}
+.linkbtn {
+  align-self: center;
+  padding: 4px 8px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: var(--red);
+}

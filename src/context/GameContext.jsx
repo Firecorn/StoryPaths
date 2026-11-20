@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useReducer } from 'react
 import { nextTargetGrade } from '../lib/readability.js';
 import { currentStreak, todayKey, weekFlags } from '../lib/streak.js';
 import { READING_LEVELS } from '../data/options.js';
+import { gradeForBand } from '../lib/bands.js';
 
 // Everything lives in localStorage for now. Replace the persistence effect and
 // the signIn / signOut / deleteAccount actions with real API calls when you add a backend.
@@ -13,7 +14,8 @@ const initialState = {
   points: 0, // Clarity Points (XP)
   activeDates: [], // days with at least one correct answer -> streaks
   recent: [], // last 10 answers (true/false) -> adaptive engine
-  targetGrade: 5, // reading-level target the engine aims for
+  targetGrade: 5.5, // reading-level target the engine aims for
+  diagnosticDone: false, // placement diagnostic finished (or skipped)
   words: [], // vocabulary collected from context-clue questions -> Notes
   progress: {}, // storyId -> % complete
   recentStories: [], // most recent first
@@ -58,6 +60,24 @@ function reducer(state, a) {
         targetGrade: nextTargetGrade(state.targetGrade, recent),
       };
     }
+    case 'points': {
+      // Points without touching the accuracy history (e.g. a correct answer after a retry).
+      const today = todayKey();
+      return {
+        ...state,
+        points: state.points + a.points,
+        activeDates: state.activeDates.includes(today) ? state.activeDates : [...state.activeDates, today],
+      };
+    }
+    case 'diagnostic':
+      // band undefined = skipped: keep whatever level is already set.
+      return {
+        ...state,
+        diagnosticDone: true,
+        recent: [],
+        user: a.band ? { ...state.user, readingLevel: a.band } : state.user,
+        targetGrade: a.band ? gradeForBand(a.band) : state.targetGrade,
+      };
     case 'spend':
       return { ...state, points: state.points - a.cost };
     case 'addWord':
@@ -96,6 +116,9 @@ export function GameProvider({ children }) {
       deleteAccount: () => dispatch({ type: 'reset' }),
       updateUser: (user) => dispatch({ type: 'updateUser', user }),
       recordAnswer: (correct, points = 0) => dispatch({ type: 'answer', correct, points }),
+      addPoints: (points) => dispatch({ type: 'points', points }),
+      completeDiagnostic: (band) => dispatch({ type: 'diagnostic', band }),
+      skipDiagnostic: () => dispatch({ type: 'diagnostic' }),
       /** Returns false (and spends nothing) if the player can't afford it. */
       spend: (cost) => {
         if (state.points < cost) return false;

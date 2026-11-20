@@ -18,7 +18,7 @@ export default function SignUp() {
     // TODO: send to your API; never store the password client-side.
     const { password, ...profile } = form;
     signIn({ ...profile, interests: profile.interests.length ? profile.interests : INTERESTS });
-    navigate('/home');
+    navigate('/diagnostic'); // new accounts take the placement diagnostic first
   };
 
   return (
