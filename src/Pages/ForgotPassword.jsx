@@ -1,21 +1,23 @@
 import { useState } from 'react';
 import Mascot from '../components/Mascot.jsx';
 import { BackLink, Clouds } from '../components/AuthParts.jsx';
+import { useGame } from '../context/GameContext.jsx';
+import { authMessage } from '../lib/authErrors.js';
 
 // Design: "Oh No! I Forgot My Password"
 export default function ForgotPassword() {
+  const { resetPassword } = useGame();
   const [email, setEmail] = useState('');
-  const [sent, setSent] = useState(false);
   const [status, setStatus] = useState({ type: 'idle', text: '' });
-
 
   const submit = async (e) => {
     e.preventDefault();
     setStatus({ type: 'loading', text: 'Sending…' });
     try {
       await resetPassword(email.trim());
-      setStatus({ type: 'sent', text: 'Check your inbox for a reset link.' });
+      setStatus({ type: 'sent', text: 'Check your inbox (and spam) for a reset link.' });
     } catch (err) {
+      console.error('Password reset failed', err); // look for err.code in the browser console
       setStatus({ type: 'error', text: authMessage(err) });
     }
   };
@@ -50,8 +52,10 @@ export default function ForgotPassword() {
           autoComplete="email"
         />
 
-        <button className="btn btn--solid btn--small" type="submit">SEND</button>
-        <p className="auth__status" role="status">{sent ? 'Check your inbox for a reset link.' : ''}</p>
+        <button className="btn btn--solid btn--small" type="submit" disabled={status.type === 'loading'}>
+          SEND
+        </button>
+        <p className="auth__status" role="status">{status.text}</p>
       </form>
 
       <Clouds />
