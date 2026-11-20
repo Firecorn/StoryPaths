@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useGame } from '../context/GameContext.jsx';
-import { BackIcon, BookIcon, HomeIcon, NotesIcon, SwordIcon, XpMushrooms } from './Icons.js';
+import { BackIcon, BookIcon, HomeIcon, NotesIcon, SwordIcon, XpMushrooms } from './Icons.jsx';
 
 export function TopBar({ title, subtitle }) {
   const navigate = useNavigate();
@@ -14,8 +14,8 @@ export function TopBar({ title, subtitle }) {
         </button>
         <h1 className="topbar__title">{title}</h1>
         <div className="topbar__xp" aria-label={`${points} Clarity Points`}>
-          <XpMushrooms width={44} height={30} />
-          <span>{points} XP</span>
+          <img src="/assets/xp.png" alt="" width={43} />
+          <span> {points} XP </span>
         </div>
       </div>
       {subtitle && <div className="topbar__subtitle">{subtitle}</div>}
@@ -24,19 +24,24 @@ export function TopBar({ title, subtitle }) {
 }
 
 const TABS = [
-  { to: '/home', label: 'Home', Icon: HomeIcon },
-  { to: '/stories', label: 'Stories', Icon: BookIcon },
-  { to: '/notes', label: 'Notes', Icon: NotesIcon },
-  { to: '/profile', label: 'Profile', Icon: SwordIcon },
+  { to: '/home', label: 'Home', icon: 'home' },
+  { to: '/stories', label: 'Stories', icon: 'stories' },
+  { to: '/notes', label: 'Notes', icon: 'notes' },
+  { to: '/profile', label: 'Profile', icon: 'profile' },
 ];
 
 export function BottomNav() {
   return (
     <nav className="bottomnav" aria-label="Main">
-      {TABS.map(({ to, label, Icon }) => (
+
+      {TABS.map(({ to, label, icon }) => (
         <NavLink key={to} to={to} className={({ isActive }) => `bottomnav__item${isActive ? ' is-active' : ''}`}>
-          <Icon width={38} height={38} />
-          <span>{label}</span>
+          {({ isActive }) => (
+            <>
+              <img src={`/assets/nav-${icon}${isActive ? '-active' : ''}.png`} alt="" width={38} height={38} />
+              <span>{label}</span>
+            </>
+          )}
         </NavLink>
       ))}
     </nav>

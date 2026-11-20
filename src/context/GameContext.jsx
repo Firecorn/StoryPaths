@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useReducer } from 'react';
-import { nextTargetGrade } from '.../lib/readability.js';
-import { currentStreak, todayKey, weekFlags } from '.../lib/streak.js';
+import { nextTargetGrade } from '../lib/readability.js';
+import { currentStreak, todayKey, weekFlags } from '../lib/streak.js';
 import { READING_LEVELS } from '../data/options.js';
 
 // Everything lives in localStorage for now. Replace the persistence effect and
