@@ -5,7 +5,7 @@ import {
   QuestionIcon, ShareIcon, StarIcon, TrashIcon,
 } from '../components/Icons.jsx';
 import { useGame } from '../context/GameContext.jsx';
-import { authMessage } from '.../lib/authErrors.js';
+import { authMessage } from '../lib/authErrors.js';
 
 // Design: Profile > settings list
 export default function Profile() {

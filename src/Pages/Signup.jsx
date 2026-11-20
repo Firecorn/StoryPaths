@@ -4,7 +4,7 @@ import { BackLink, Clouds } from '../components/AuthParts.jsx';
 import { Field, PillMultiSelect, PillSelect } from '../components/Form.jsx';
 import { useGame } from '../context/GameContext.jsx';
 import { GRADES, INTERESTS } from '../data/options.js';
-import { authMessage } from '.../lib/authErrors.js';
+import { authMessage } from '../lib/authErrors.js';
 
 // Design: "Create an Account"
 export default function SignUp() {

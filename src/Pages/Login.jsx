@@ -4,7 +4,7 @@ import Mascot from '../components/Mascot.jsx';
 import { BackLink, Clouds } from '../components/AuthParts.jsx';
 import { Field } from '../components/Form.jsx';
 import { useGame } from '../context/GameContext.jsx';
-import { authMessage } from '.../lib/authErrors.js';
+import { authMessage } from '../lib/authErrors.js';
 
 // Not in the Canva set, but the splash screen's "Login" button needs a destination.
 // Built from the Forgot Password layout so it matches.
