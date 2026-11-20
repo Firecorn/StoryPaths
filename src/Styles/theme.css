@@ -1,0 +1,91 @@
+/* Design tokens sampled from the Canva screens */
+:root {
+  --cream: #fdf0e1;
+  --cream-soft: #fffbf5;
+  --red: #b2402b;
+  --red-soft: #c2604d;
+  --red-deep: #3d0820;
+  --coral: #f26b4e;
+  --ink: #8f2d1b; /* darker than coral: used for text children read a lot of */
+  --butter: #fce7b2;
+  --peach: #fddccd;
+  --sticky: #fdcb82;
+  --tape: rgba(150, 212, 212, 0.6);
+  --input: #d4cac0;
+  --nav: #efe6de;
+  --muted: #8a8480;
+  --slate: #c8d0da;
+
+  --font-display: 'Raleway', system-ui, sans-serif;
+  --font-strong: 'Poppins', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-chat: 'Open Sans', system-ui, sans-serif;
+
+  --app-width: 430px;
+  --nav-height: 84px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #e9dccd; /* visible only on desktop, around the phone column */
+  font-family: var(--font-display);
+  color: var(--red);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+}
+
+/* Phone-sized column that centres on desktop */
+.app {
+  position: relative;
+  width: 100%;
+  max-width: var(--app-width);
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
