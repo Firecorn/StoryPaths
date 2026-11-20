@@ -27,7 +27,7 @@ function QuestGauge({ percent }) {
 export default function Home() {
   const { user, progress, recentStories, streak, week } = useGame();
 
-  const currentId = recentStories[0] ?? 'mount-quill';
+  const currentId = recentStories[0] ?? STORIES[0].id;
   const current = getStory(currentId) ?? STORIES[0];
   const percent = progress[current.id] ?? 0;
 

@@ -48,13 +48,12 @@ export function BottomNav() {
   );
 }
 
-/** Standard in-app screen: top bar + scrolling content + bottom tabs. */
-export default function Screen({ title, subtitle, className = '', children }) {
+export default function Screen({ title, subtitle, className = '', hideNav = false, children }) {
   return (
-    <div className="app">
+    <div className={`app${hideNav ? ' app--nonav' : ''}`}>
       <TopBar title={title} subtitle={subtitle} />
       <main className={`screen ${className}`}>{children}</main>
-      <BottomNav />
+      {!hideNav && <BottomNav />}
     </div>
   );
 }

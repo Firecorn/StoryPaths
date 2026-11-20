@@ -1,9 +1,8 @@
-// `grade` seeds the adaptive engine's starting target for that reading level.
+
 export const READING_LEVELS = [
-  { value: 'beginner', label: 'Beginner (grades 2–3)', grade: 3 },
-  { value: 'developing', label: 'Developing (grades 4–5)', grade: 4.5 },
-  { value: 'proficient', label: 'Proficient (grades 6–7)', grade: 6.5 },
-  { value: 'advanced', label: 'Advanced (grade 8+)', grade: 8 },
+  { value: '3-4', label: 'Grades 3–4', grade: 3.5 },
+  { value: '5-6', label: 'Grades 5–6', grade: 5.5 },
+  { value: '7-8', label: 'Grades 7–8', grade: 7.5 },
 ];
 
 export const GRADES = ['3rd', '4th', '5th', '6th', '7th', '8th'];
