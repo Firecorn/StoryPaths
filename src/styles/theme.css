@@ -89,3 +89,6 @@ a {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+#root { display: block; width: 100%; }
+.app { width: 100%; max-width: 430px; margin: 0 auto; flex-shrink: 0; }

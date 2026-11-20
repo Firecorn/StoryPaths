@@ -5,7 +5,7 @@ import Landscape from '../components/Avatar.jsx';
 import { SendIcon } from '../components/Icons.jsx';
 import { useGame } from '../context/GameContext.jsx';
 import { getStory } from '../data/stories.js';
-import { nextTargetGrade, pickVariant } from '.../lib/readability.js';
+import { nextTargetGrade, pickVariant } from '../lib/readability.js';
 
 const HINT_COST = 10;
 let uid = 0;
