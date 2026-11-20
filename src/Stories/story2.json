@@ -1,0 +1,572 @@
+{
+  "questId": "quest_02_beach",
+  "title": "Tides of Sunken Cove",
+  "startingNodeId": "node_01",
+  "nodes": {
+    "node_01": {
+      "speaker": "Captain Mara",
+      "variants": {
+        "3-4": {
+          "passage": "Your wooden rowboat washes onto a sandy beach. Captain Mara points to wet seaweed high up on the rocks. 'The ocean tide is rising fast,' she says. 'We must pull our boat above the wet line before it floats away.'",
+          "vocabulary": {
+            "tide": "the regular rise and fall of the ocean",
+            "floats": "stays on top of the water"
+          },
+          "question": "Why does Captain Mara want to move the boat up the beach?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "So the rising ocean water does not carry it away", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "To hide the boat behind tall palm trees", "isCorrect": false, "scaffoldHint": "Read Captain Mara's last sentence to see what happens if the boat stays low." }
+          ]
+        },
+        "5-6": {
+          "passage": "Your skiff lands on the shore of Sunken Cove. Captain Mara points to a dark band of damp seaweed high along the cliffs. 'The incoming tide will submerge this entire beach within the hour,' she warns. 'Haul the boat onto higher ground immediately.'",
+          "vocabulary": {
+            "skiff": "a small, light rowboat",
+            "submerge": "to cover completely with water"
+          },
+          "question": "How does Captain Mara know the water will rise high on the beach?",
+          "skillType": "inference",
+          "options": [
+            { "text": "The wet seaweed high on the cliffs marks where the water reaches", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "Dark storm clouds are gathering over the cove", "isCorrect": false, "scaffoldHint": "Look at what Captain Mara points to in the second sentence." }
+          ]
+        },
+        "7-8": {
+          "passage": "Your small boat lands on the shore of Sunken Cove. Captain Mara points to a dark line of wet seaweed clinging high on the rocky cliffs. 'The incoming tide will flood this entire beach within the hour,' she warns. 'Pull the boat onto higher ground right away.'",
+          "vocabulary": {
+            "tide": "the regular rise and fall of ocean water levels",
+            "clinging": "holding tightly onto a surface"
+          },
+          "question": "What clue proves to Captain Mara that the water will flood the beach?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "The line of wet seaweed high up on the cliffs", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "Heavy waves already crashing over the boat", "isCorrect": false, "scaffoldHint": "Check what Captain Mara points to in the second sentence." }
+          ]
+        }
+      }
+    },
+    "node_02": {
+      "speaker": "Captain Mara",
+      "variants": {
+        "3-4": {
+          "passage": "Before exploring the cove, Mara checks your canteen. 'Drinking salty ocean water will make you sick,' she reminds you. 'Only fill your bottle from clear freshwater springs.'",
+          "vocabulary": {
+            "canteen": "a small bottle used for carrying drinking water"
+          },
+          "question": "What kind of water is safe to put in your canteen?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "Clear freshwater from springs", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "Salty water from tide pools", "isCorrect": false, "scaffoldHint": "Re-read the second sentence to see what Mara tells you to fill your bottle with." }
+          ]
+        },
+        "5-6": {
+          "passage": "Before setting out, Mara inspects your supplies. 'Saltwater dehydrates the body rapidly,' she explains. 'Save your energy and replenish your flask only when we locate an inland freshwater spring.'",
+          "vocabulary": {
+            "dehydrates": "causes the body to lose too much water",
+            "replenish": "to fill something up again"
+          },
+          "question": "Why must explorers avoid drinking seawater in Sunken Cove?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "It quickly drains water from your body instead of helping", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "It ruins the metal inside your canteen", "isCorrect": false, "scaffoldHint": "Check the definition of 'dehydrates' in Mara's first sentence." }
+          ]
+        },
+        "7-8": {
+          "passage": "Before heading inland, Mara checks your water supplies. 'Drinking salty ocean water actually dehydrates your body faster,' she explains. 'Save what you have until we find a clear freshwater spring further up the island.'",
+          "vocabulary": {
+            "dehydrates": "causes the body to lose water dangerously fast",
+            "inland": "away from the coast toward the middle of the land"
+          },
+          "question": "Why does Mara warn against drinking ocean water?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "It makes your body lose water even faster", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "Freshwater springs are right next to the beach", "isCorrect": false, "scaffoldHint": "Read Mara's first sentence inside the quotation marks." }
+          ]
+        }
+      }
+    },
+    "node_03": {
+      "speaker": "Captain Mara",
+      "variants": {
+        "3-4": {
+          "passage": "The beach splits into two ways. 'The coral reef has sharp shells, so you must step slowly. The cliff path has smooth rocks, yet the wind blows very hard.' Which way will you go?",
+          "vocabulary": {
+            "reef": "a ridge of rock or coral near the ocean surface"
+          },
+          "question": "Choose your path across the cove:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Cross the Coral Reef (Calm wind, sharp shells)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Climb the Cliff Path (Smooth rocks, strong wind)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both paths have soft sand and no wind", "isCorrect": false, "scaffoldHint": "Mara describes a challenge on each path—pick either the reef or the cliff." }
+          ]
+        },
+        "5-6": {
+          "passage": "At the edge of the cove, two routes appear. 'The tidal reef keeps us sheltered from gusts, though jagged coral requires careful footing,' Mara says. 'Meanwhile, the upper cliff trail offers solid stone, yet fierce sea winds buffet the ledge.'",
+          "vocabulary": {
+            "jagged": "having rough, sharp points",
+            "buffet": "to strike repeatedly with force"
+          },
+          "question": "Pick your route based on Mara's comparison:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Tidal Reef (Sheltered from wind, rough footing)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Upper Cliff Trail (Solid stone, heavy winds)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Neither route leads toward the lighthouse", "isCorrect": false, "scaffoldHint": "Compare the trade-offs of the reef versus the cliff trail." }
+          ]
+        },
+        "7-8": {
+          "passage": "Where the beach ends, Mara compares two routes forward: 'The low coral reef blocks the strong sea wind, even though sharp shells make walking tricky. On the other hand, the high cliff path has flat stone, but heavy gusts blow across the ledge.'",
+          "vocabulary": {
+            "gusts": "sudden, strong bursts of wind",
+            "ledge": "a narrow shelf of rock along a cliff"
+          },
+          "question": "Select your route based on the trade-offs Mara describes:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Low Coral Reef (Blocked wind, tricky footing)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "High Cliff Path (Flat stone, heavy wind gusts)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both routes are completely sheltered from the wind", "isCorrect": false, "scaffoldHint": "Notice how 'On the other hand' contrasts the windy cliff path with the sheltered reef." }
+          ]
+        }
+      }
+    },
+    "node_04a": {
+      "speaker": "Shipwreck Reef",
+      "variants": {
+        "3-4": {
+          "passage": "Among the coral pools, you spot an old wooden ship wheel. A brass plate on it says: 'Blue crabs hide under flat stones; red urchins stick to round boulders.'",
+          "vocabulary": {
+            "urchins": "small sea animals covered in sharp spines"
+          },
+          "question": "Where are the spiky red urchins located?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "On the round boulders", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Under the flat stones", "isCorrect": false, "scaffoldHint": "Read the second half of the brass plate after the semicolon (;)." }
+          ]
+        },
+        "5-6": {
+          "passage": "Wading through the shallow reef pools, you discover a corroded brass plaque bolted to a shipwreck timber: 'Harmless hermit crabs shelter beneath flat slabs, whereas spiny sea urchins cluster on rounded boulders.'",
+          "vocabulary": {
+            "corroded": "worn away or rusted by water and air",
+            "cluster": "to gather closely together in a group"
+          },
+          "question": "How can you avoid stepping on spiny sea urchins?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Stay off the rounded boulders", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Avoid walking near flat slabs", "isCorrect": false, "scaffoldHint": "Check where the plaque says the spiny sea urchins gather." }
+          ]
+        },
+        "7-8": {
+          "passage": "Wading through the reef pools, you spot a rusted brass sign bolted to a shipwreck beam: 'Harmless crabs hide under flat stones, while spiky sea urchins cluster on top of rounded boulders.'",
+          "vocabulary": {
+            "cluster": "to gather closely together in a group",
+            "beam": "a long, thick piece of wood from a ship"
+          },
+          "question": "Which rocks should you avoid stepping on in the reef?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Rounded boulders where spiky sea urchins gather", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Flat stones near the shipwreck beam", "isCorrect": false, "scaffoldHint": "Check where the spiky sea urchins cluster according to the sign." }
+          ]
+        }
+      }
+    },
+    "node_04b": {
+      "speaker": "Coastal Cliffs",
+      "variants": {
+        "3-4": {
+          "passage": "High on the windy cliff, white seagulls circle above a narrow ledge. 'Seagulls build nests where the rock is wide and flat,' Mara says. 'Follow the birds to find safe ground.'",
+          "vocabulary": {
+            "ledge": "a narrow shelf of rock sticking out from a cliff"
+          },
+          "question": "Why does Mara tell you to follow the seagulls?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "They gather on wide, flat rocks that are safe to walk on", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "They will lead you to buried treasure chests", "isCorrect": false, "scaffoldHint": "Read Mara's first sentence about where seagulls build nests." }
+          ]
+        },
+        "5-6": {
+          "passage": "Along the bluffs, flocks of gulls wheel above a broad rock shelf. 'Seabirds nest exclusively on wide, stable ledges out of reach of crumbling stone,' Mara observes. 'Their nesting ground marks our safest crossing.'",
+          "vocabulary": {
+            "exclusively": "only; without exception",
+            "stable": "firm and unlikely to break or collapse"
+          },
+          "question": "What does the gulls' nesting area reveal about the cliff?",
+          "skillType": "inference",
+          "options": [
+            { "text": "That section of rock is wide and sturdy enough to cross", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "A freshwater waterfall is hidden directly behind them", "isCorrect": false, "scaffoldHint": "Focus on why seabirds choose that specific ledge." }
+          ]
+        },
+        "7-8": {
+          "passage": "Along the high cliffs, flocks of seagulls circle above a wide stone shelf. 'Seabirds only build nests on sturdy, flat rock away from crumbling edges,' Mara notes. 'Their nesting spot marks the safest way across.'",
+          "vocabulary": {
+            "sturdy": "strongly built and unlikely to break",
+            "crumbling": "breaking into small pieces easily"
+          },
+          "question": "How do the seagulls help you cross the cliff safely?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Their nests show which part of the cliff is solid and flat", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "Their calls warn you when big waves hit the rocks", "isCorrect": false, "scaffoldHint": "Read why seabirds choose that specific shelf in Mara's first sentence." }
+          ]
+        }
+      }
+    },
+    "node_05a": {
+      "speaker": "Sunken Hull",
+      "variants": {
+        "3-4": {
+          "passage": "A deep channel of water cuts across the reef. An old wooden oar lies across the gap. 'Slide your feet slowly instead of jumping,' Mara warns, 'because wet wood is slippery.'",
+          "vocabulary": {
+            "channel": "a narrow passage of water"
+          },
+          "question": "Why should you slide your feet across the wooden oar?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Because jumping on wet wood could make you slip", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Because the oar is too short to reach the other side", "isCorrect": false, "scaffoldHint": "Read the reason after the word 'because' in Mara's warning." }
+          ]
+        },
+        "5-6": {
+          "passage": "A swift tidal channel divides the coral shelf, spanned by a heavy ship's spar. 'Shuffle across with a low center of gravity,' Mara instructs, 'since ocean spray leaves the timber slick.'",
+          "vocabulary": {
+            "spar": "a thick wooden pole used on a sailing ship",
+            "shuffle": "to walk by sliding your feet without lifting them high"
+          },
+          "question": "What makes crossing the ship's spar difficult?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Sea spray has made the wooden surface slippery", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Strong currents are pushing the spar underwater", "isCorrect": false, "scaffoldHint": "Look at the end of Mara's sentence after the word 'since'." }
+          ]
+        },
+        "7-8": {
+          "passage": "A deep water channel splits the reef, bridged by a thick wooden mast from an old ship. 'Keep your balance low and slide your feet,' Mara warns, 'because ocean spray makes the wood slick.'",
+          "vocabulary": {
+            "mast": "a tall wooden pole that holds up a ship's sails",
+            "slick": "smooth and slippery"
+          },
+          "question": "Why does Mara advise sliding your feet across the wooden mast?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Ocean spray has made the wood slippery, so normal steps are risky", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "The wooden mast bends sharply if you walk upright", "isCorrect": false, "scaffoldHint": "Check what 'ocean spray' does to the wood after the word 'because'." }
+          ]
+        }
+      }
+    },
+    "node_05b": {
+      "speaker": "Cliffside Rope Bridge",
+      "variants": {
+        "3-4": {
+          "passage": "Two cliffs are connected by an old rope bridge. 'Hold the thick top ropes tightly,' Mara says. 'The thin bottom ropes are frayed and might snap if you pull them.'",
+          "vocabulary": {
+            "frayed": "worn out with loose threads"
+          },
+          "question": "Which ropes should you hold onto?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "The thick top ropes", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "The thin bottom ropes", "isCorrect": false, "scaffoldHint": "Re-read Mara's first sentence to see which ropes to hold." }
+          ]
+        },
+        "5-6": {
+          "passage": "A suspension bridge of hemp rope spans a rocky chasm. 'Grip the upper guide cables firmly,' Mara advises. 'Salt air has frayed the lower cords, making them too weak to support weight.'",
+          "vocabulary": {
+            "suspension": "hanging from cables or ropes",
+            "chasm": "a deep crack or opening in the earth"
+          },
+          "question": "Why are the lower cords unsafe to grab?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Salt air has weakened them so they cannot hold weight", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "They are coated in wet seaweed", "isCorrect": false, "scaffoldHint": "Read the second sentence to see what salt air did to the lower cords." }
+          ]
+        },
+        "7-8": {
+          "passage": "An old rope bridge stretches across a deep gap in the cliffs. 'Hold firmly onto the thick upper handrails,' Mara instructs. 'Salty sea air has worn down the thin lower ropes, leaving them too weak to hold your weight.'",
+          "vocabulary": {
+            "handrails": "ropes or bars meant to be held for support",
+            "worn": "damaged or weakened from age and weather"
+          },
+          "question": "What made the lower ropes unsafe to use for support?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Salty sea air weakened them so they could snap under weight", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Sharp cliff rocks cut through the middle of the bridge", "isCorrect": false, "scaffoldHint": "Read Mara's second sentence to see what damaged the lower ropes." }
+          ]
+        }
+      }
+    },
+    "node_06": {
+      "speaker": "Freshwater Oasis",
+      "variants": {
+        "3-4": {
+          "passage": "Both paths meet at a shaded palm grove with a clear freshwater pool. A wooden sign reads: 'Fill your bottles here, but do not wash muddy boots in the pool so the water stays clean.'",
+          "vocabulary": {
+            "grove": "a small group of trees"
+          },
+          "question": "Why does the sign forbid washing muddy boots in the pool?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "To keep the drinking water clean for everyone", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Because mud attracts sea turtles", "isCorrect": false, "scaffoldHint": "Read the end of the sign after the word 'so'." }
+          ]
+        },
+        "5-6": {
+          "passage": "Both trails converge at a sheltered palm oasis fed by a crystal-clear spring. A carved sign warns: 'Draw drinking water freely, yet rinse gear downstream so the basin remains unpolluted.'",
+          "vocabulary": {
+            "oasis": "a fertile spot with water in a dry or coastal area",
+            "unpolluted": "clean and free from dirt or harmful substances"
+          },
+          "question": "What rule protects the oasis water supply?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Washing dirty equipment downstream instead of in the spring", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Limiting travelers to one cup of water each", "isCorrect": false, "scaffoldHint": "Look at where the sign tells travelers to rinse their gear." }
+          ]
+        },
+        "7-8": {
+          "passage": "Both paths meet at a shaded palm grove with a clear freshwater spring. A wooden sign reads: 'Fill your canteens at the main pool, but wash muddy gear downstream so the drinking water stays clean for future travelers.'",
+          "vocabulary": {
+            "downstream": "further down the flow of a stream",
+            "grove": "a small cluster of trees"
+          },
+          "question": "What is the main purpose of the rule on the sign?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Keeping the main spring clean and safe for everyone to drink", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Stopping travelers from resting too long under the palm trees", "isCorrect": false, "scaffoldHint": "Focus on the reason given after the word 'so'." }
+          ]
+        }
+      }
+    },
+    "node_07": {
+      "speaker": "Captain Mara",
+      "variants": {
+        "3-4": {
+          "passage": "Ahead stands a tall stone lighthouse. 'We can climb the dark spiral stairs inside, or take the bright outside ramp,' Mara says. Which path do you pick?",
+          "vocabulary": {
+            "spiral": "winding in a continuous curve around a center"
+          },
+          "question": "Choose how to reach the lighthouse tower:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Climb the Dark Spiral Stairs (Inside)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Walk up the Bright Outside Ramp (Outdoors)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Neither path goes up the lighthouse", "isCorrect": false, "scaffoldHint": "Both routes go up—pick either the stairs or the ramp." }
+          ]
+        },
+        "5-6": {
+          "passage": "At the base of the old lighthouse, Mara points out two entrances. 'The interior spiral staircase shields us from sea spray, whereas the exterior stone ramp offers clear visibility.'",
+          "vocabulary": {
+            "interior": "located on the inside",
+            "exterior": "located on the outside"
+          },
+          "question": "Select your route up the lighthouse:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Interior Spiral Staircase (Protected from spray)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Exterior Stone Ramp (Clear visibility)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both routes require climbing ropes on the outside", "isCorrect": false, "scaffoldHint": "Compare the interior staircase with the exterior ramp." }
+          ]
+        },
+        "7-8": {
+          "passage": "At the bottom of the tall stone lighthouse, Mara compares two ways up: 'The inside spiral stairs block the ocean spray, while the outside stone ramp gives us plenty of daylight and a clear view.'",
+          "vocabulary": {
+            "spiral": "winding upward in a circle",
+            "spray": "tiny drops of water blown from waves"
+          },
+          "question": "Choose your path up to the lighthouse tower:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Inside Spiral Stairs (Protected from sea spray)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Outside Stone Ramp (Bright daylight and clear view)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both paths are completely dark and indoors", "isCorrect": false, "scaffoldHint": "Notice that the outside stone ramp offers 'plenty of daylight'." }
+          ]
+        }
+      }
+    },
+    "node_08a": {
+      "speaker": "Lighthouse Stairwell",
+      "variants": {
+        "3-4": {
+          "passage": "Inside the dark stairwell, small round windows let in beams of sunlight. Every tenth step has a painted white stripe so climbers do not trip in the shadows.",
+          "vocabulary": {
+            "beams": "narrow lines of light"
+          },
+          "question": "Why are white stripes painted on every tenth step?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "To help climbers see the stairs and avoid tripping", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "To count how many birds live in the tower", "isCorrect": false, "scaffoldHint": "Read the end of the second sentence after the word 'so'." }
+          ]
+        },
+        "5-6": {
+          "passage": "Ascending the dimly lit stairwell, you notice narrow portholes casting shafts of daylight across the stone. High-contrast white bands mark every tenth step to prevent missteps in the gloom.",
+          "vocabulary": {
+            "portholes": "small round windows in a ship or tower",
+            "gloom": "partial or total darkness"
+          },
+          "question": "How did the builders make the dark staircase safer?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "By painting visible white markers on regular steps", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "By hanging burning torches on every wall", "isCorrect": false, "scaffoldHint": "Check what marks every tenth step in the second sentence." }
+          ]
+        },
+        "7-8": {
+          "passage": "As you climb the dim stairwell, small round windows let in thin beams of sunlight. Bright white stripes are painted on every tenth step so climbers can spot the edges and avoid tripping in the shadows.",
+          "vocabulary": {
+            "dim": "not brightly lit; somewhat dark",
+            "beams": "narrow rays of light"
+          },
+          "question": "How did the lighthouse builders make the dark stairs safer to climb?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "They painted bright white stripes on every tenth step for visibility", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "They hung glowing lanterns from the ceiling every ten feet", "isCorrect": false, "scaffoldHint": "Check what is painted on the steps in the second sentence." }
+          ]
+        }
+      }
+    },
+    "node_08b": {
+      "speaker": "Lighthouse Ramp",
+      "variants": {
+        "3-4": {
+          "passage": "Walking up the outside ramp, you look out over the ocean. Far to the south, dark gray storm clouds are moving fast toward the cove.",
+          "vocabulary": {
+            "south": "the direction opposite to north"
+          },
+          "question": "What do you spot from the high outside ramp?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "A fast-moving storm approaching from the south", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "A fleet of pirate ships anchoring nearby", "isCorrect": false, "scaffoldHint": "Read the second sentence to see what is moving toward the cove." }
+          ]
+        },
+        "5-6": {
+          "passage": "From the elevated exterior ramp, you gain a panoramic view of the horizon. Along the southern skyline, dense thunderheads are advancing rapidly toward Sunken Cove.",
+          "vocabulary": {
+            "panoramic": "with a wide, unobstructed view of a large area",
+            "advancing": "moving forward"
+          },
+          "question": "Why is reaching the top of the lighthouse urgent now?",
+          "skillType": "inference",
+          "options": [
+            { "text": "A heavy storm is approaching the cove quickly", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "The stone ramp closes at sunset", "isCorrect": false, "scaffoldHint": "Check what 'dense thunderheads are advancing rapidly' means." }
+          ]
+        },
+        "7-8": {
+          "passage": "From the high outside ramp, you get a clear view of the ocean horizon. Far to the south, thick dark storm clouds are moving rapidly toward Sunken Cove.",
+          "vocabulary": {
+            "horizon": "the line where the earth or sea seems to meet the sky",
+            "rapidly": "very quickly"
+          },
+          "question": "Why does reaching the top of the tower become urgent now?",
+          "skillType": "inference",
+          "options": [
+            { "text": "A heavy storm is heading straight toward the cove quickly", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "The stone ramp is starting to crumble behind you", "isCorrect": false, "scaffoldHint": "Check what is moving rapidly on the southern horizon." }
+          ]
+        }
+      }
+    },
+    "node_09": {
+      "speaker": "Lighthouse Keeper's Console",
+      "variants": {
+        "3-4": {
+          "passage": "At the top of the tower sits a giant glass lantern. A brass sign reads: 'To signal rescue ships, turn the silver dial to match the green harbor light.'",
+          "vocabulary": {
+            "signal": "to send a message or warning using light or sound"
+          },
+          "question": "How do you turn on the rescue signal?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Turn the silver dial to the green harbor light", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Ring the bronze bell three times", "isCorrect": false, "scaffoldHint": "Read the instructions inside the quotation marks on the brass sign." }
+          ]
+        },
+        "5-6": {
+          "passage": "Both paths meet inside the lighthouse lantern room. Engraved on the brass control panel is an instruction: 'To activate the beacon for passing vessels, align the silver dial with the emerald harbor indicator.'",
+          "vocabulary": {
+            "beacon": "a bright light used as a warning or signal",
+            "emerald": "a bright green color"
+          },
+          "question": "Which action activates the lighthouse beacon?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Aligning the silver dial with the green harbor indicator", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Polishing the glass lens with oil", "isCorrect": false, "scaffoldHint": "Check the exact instruction after 'To activate the beacon:'." }
+          ]
+        },
+        "7-8": {
+          "passage": "Both paths meet inside the glass lantern room at the top. Engraved on a brass control panel is an instruction: 'To turn on the rescue beacon, line up the silver dial with the green harbor marker.'",
+          "vocabulary": {
+            "beacon": "a bright guiding or warning light",
+            "engraved": "carved or cut into a hard surface"
+          },
+          "question": "According to the control panel, how do you activate the rescue beacon?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Line up the silver dial with the green harbor marker", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Pull the iron lever next to the glass window", "isCorrect": false, "scaffoldHint": "Read the exact instruction inside the quotation marks." }
+          ]
+        }
+      }
+    },
+    "node_10": {
+      "speaker": "Captain Mara",
+      "variants": {
+        "3-4": {
+          "passage": "A bright green beam shines across the ocean! Across the water, a rescue ship flashes its lights back. 'You read every sign and kept us safe,' Captain Mara cheers. 'Quest complete!'",
+          "vocabulary": {
+            "rescue": "to save someone from a dangerous situation"
+          },
+          "question": "How do you know help is on the way?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "A rescue ship flashes its lights back across the water", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Seagulls land on top of the lighthouse roof", "isCorrect": false, "scaffoldHint": "Read the second sentence to see how the rescue ship responds." }
+          ]
+        },
+        "5-6": {
+          "passage": "An emerald beam cuts through the gathering mist, and a distant rescue vessel answers with three bright flares. 'Your careful reading of every clue guided us safely through Sunken Cove,' Captain Mara says with a smile.",
+          "vocabulary": {
+            "vessel": "a large boat or ship"
+          },
+          "question": "What confirms your signal was seen?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "The rescue ship responds with three bright flares", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "The storm clouds immediately disappear", "isCorrect": false, "scaffoldHint": "Check how the distant rescue vessel answers your beam." }
+          ]
+        },
+        "7-8": {
+          "passage": "A bright green beam cuts through the ocean mist, and a distant rescue ship answers with three bright signal flares. 'Careful reading and sharp attention to every clue got us safely through Sunken Cove,' Captain Mara says with a smile.",
+          "vocabulary": {
+            "flares": "bright burning lights used to send signals",
+            "mist": "light fog near the water"
+          },
+          "question": "What confirms that the rescue ship spotted your lighthouse signal?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "The ship responds by firing three bright signal flares", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "The storm clouds turn back toward the south", "isCorrect": false, "scaffoldHint": "Read the second half of the first sentence to see how the ship answers." }
+          ]
+        }
+      }
+    }
+  }
+}

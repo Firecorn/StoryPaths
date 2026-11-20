@@ -1,0 +1,571 @@
+{
+  "questId": "quest_01_mountain",
+  "title": "The Whispering Peak",
+  "startingNodeId": "node_01",
+  "nodes": {
+    "node_01": {
+      "speaker": "Eldrin the Mountain Guide",
+      "variants": {
+        "3-4": {
+          "passage": "You open your eyes on top of a snowy mountain. Eldrin hands you a thick wool coat. 'Put this on so you do not freeze in the wind,' he says, pointing toward two trails below.",
+          "vocabulary": {
+            "freeze": "to become very cold or turn to ice",
+            "trails": "marked paths through nature"
+          },
+          "question": "Why does Eldrin give you a thick wool coat?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "To keep warm in the cold wind", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "To hide from mountain animals", "isCorrect": false, "scaffoldHint": "Read Eldrin's words inside the quotation marks again." }
+          ]
+        },
+        "5-6": {
+          "passage": "You awaken on the icy summit of Mount Aether as biting winds sweep across the rocks. Eldrin extends a heavy wool cloak, urging you to bundle up against the frost before starting down the mountain.",
+          "vocabulary": {
+            "summit": "the highest point of a hill or mountain",
+            "biting": "sharply cold or stinging"
+          },
+          "question": "What immediate danger is Eldrin trying to protect you from?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Extreme cold exposure", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "Slipping on steep rocks", "isCorrect": false, "scaffoldHint": "Look at what the heavy wool cloak protects against." }
+          ]
+        },
+        "7-8": {
+          "passage": "You wake up at the exposed summit of Mount Aether as freezing gusts whip across the ridge. Eldrin hands you a heavy wool coat, warning you to protect yourself from the dropping temperature before starting the descent.",
+          "vocabulary": {
+            "exposed": "open to wind and weather without shelter",
+            "descent": "a downward climb or journey"
+          },
+          "question": "Based on Eldrin's warning, what is the biggest danger at the summit?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Severe cold from freezing winds and dropping temperatures", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "Getting lost in thick mountain fog", "isCorrect": false, "scaffoldHint": "Focus on what Eldrin warns you about in the second sentence." }
+          ]
+        }
+      }
+    },
+    "node_02": {
+      "speaker": "Eldrin the Mountain Guide",
+      "variants": {
+        "3-4": {
+          "passage": "Before leaving camp, Eldrin checks your pack. 'Leave heavy rocks behind,' he warns. 'Extra weight will slow you down and tire your legs before noon.'",
+          "vocabulary": {
+            "weight": "how heavy something is"
+          },
+          "question": "What happens if you carry heavy rocks in your pack?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "You will get tired and walk slower", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "Your backpack will rip open", "isCorrect": false, "scaffoldHint": "Check the second sentence to see what extra weight does to your legs." }
+          ]
+        },
+        "5-6": {
+          "passage": "Eldrin inspects your supply pack before departure. 'Discard unnecessary trinkets,' he advises. 'Conserving energy on steep terrain is essential if we want to reach the valley before sundown.'",
+          "vocabulary": {
+            "discard": "to get rid of something useless",
+            "terrain": "a stretch of land and its physical features"
+          },
+          "question": "Why does Eldrin want you to lighten your pack?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "To save energy so you finish before dark", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "To make room for firewood", "isCorrect": false, "scaffoldHint": "Read why conserving energy matters before sundown." }
+          ]
+        },
+        "7-8": {
+          "passage": "Before leaving camp, Eldrin checks your gear. 'Offload any nonessential items,' he cautions. 'Saving your stamina on steep slopes is critical if we want to reach the lower valley before nightfall.'",
+          "vocabulary": {
+            "offload": "to get rid of heavy or unnecessary weight",
+            "stamina": "the energy needed to keep going during physical effort"
+          },
+          "question": "What reason does Eldrin give for lightening your backpack?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Saving energy so you make it down before dark", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "Keeping your balance on narrow cliff ledges", "isCorrect": false, "scaffoldHint": "Look at why Eldrin says saving stamina is critical." }
+          ]
+        }
+      }
+    },
+    "node_03": {
+      "speaker": "Eldrin the Mountain Guide",
+      "variants": {
+        "3-4": {
+          "passage": "The trail splits in two. 'The high ridge is fast, but the ice is slippery. The low cave is longer, yet its stone walls block the storm.' Which path will you choose?",
+          "vocabulary": {
+            "ridge": "a long, narrow hilltop"
+          },
+          "question": "Choose your path down the mountain:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Take the High Ridge (Fast, but icy)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Take the Low Cave (Longer, but sheltered)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both paths are dry and warm", "isCorrect": false, "scaffoldHint": "Eldrin mentions ice on one path and a storm outside the other." }
+          ]
+        },
+        "5-6": {
+          "passage": "At a fork in the trail, Eldrin points left and right. 'The upper ridge offers a quick descent, though slick ice makes footing tricky. Meanwhile, the lower cavern takes longer, yet solid rock shields you from the wind.'",
+          "vocabulary": {
+            "descent": "a downward climb or slope",
+            "shields": "protects from danger or weather"
+          },
+          "question": "Pick your route based on Eldrin's comparison:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Upper Ridge (Faster route with icy footing)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Lower Cavern (Longer route with wind protection)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Neither path goes toward the valley", "isCorrect": false, "scaffoldHint": "Both paths lead downward; pick either the ridge or the cavern." }
+          ]
+        },
+        "7-8": {
+          "passage": "Where the trail splits, Eldrin compares your options: 'The upper ridge lets us move quickly, even though slick ice makes every step risky. On the other hand, the underground cavern takes longer, but thick stone walls block the storm completely.'",
+          "vocabulary": {
+            "cavern": "a large underground cave",
+            "risky": "involving the chance of danger or injury"
+          },
+          "question": "Select your route based on the trade-offs Eldrin describes:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Upper Ridge (Faster speed, higher risk of slipping)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Underground Cavern (Slower pace, full storm shelter)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both routes keep travelers sheltered from the storm", "isCorrect": false, "scaffoldHint": "Notice how 'On the other hand' contrasts the sheltered cavern with the open ridge." }
+          ]
+        }
+      }
+    },
+    "node_04a": {
+      "speaker": "High Ridge Trail",
+      "variants": {
+        "3-4": {
+          "passage": "On the narrow ridge, you see wooden poles stuck in the snow. A sign says: 'Red flags mark solid ice. Yellow flags warn of deep, soft snow.'",
+          "vocabulary": {
+            "solid": "firm and hard; safe to step on"
+          },
+          "question": "Which flags show safe ground to walk on?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "The red flags", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "The yellow flags", "isCorrect": false, "scaffoldHint": "Re-read what the sign says about red flags." }
+          ]
+        },
+        "5-6": {
+          "passage": "Halfway across the windy ridge, weathered markers poke out of the frost. An engraved wooden board reads: 'Crimson flags indicate thick ice; yellow flags warn of hollow snowdrifts.'",
+          "vocabulary": {
+            "crimson": "a deep red color",
+            "hollow": "having an empty space underneath"
+          },
+          "question": "Why should hikers stay away from yellow flags?",
+          "skillType": "inference",
+          "options": [
+            { "text": "The snow underneath could cave in", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "They mark a dead-end cliff", "isCorrect": false, "scaffoldHint": "Check the meaning of 'hollow' paired with 'snowdrifts'." }
+          ]
+        },
+        "7-8": {
+          "passage": "Moving across the windy ridge, you spot wooden trail markers anchored in the snow. A carved sign reads: 'Red flags mark solid ground; yellow flags warn of fragile snow bridges over deep gaps.'",
+          "vocabulary": {
+            "anchored": "held firmly in place",
+            "fragile": "easily broken or collapsed"
+          },
+          "question": "What danger do the yellow flags warn hikers about?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Thin layers of snow that could collapse if stepped on", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Steep rock walls that require climbing ropes", "isCorrect": false, "scaffoldHint": "Look at what 'fragile snow bridges over deep gaps' means if you walk on them." }
+          ]
+        }
+      }
+    },
+    "node_04b": {
+      "speaker": "Crystal Cavern",
+      "variants": {
+        "3-4": {
+          "passage": "Inside the dark cave, glowing blue crystals hang from the roof. Water drips from the crystals into a small stream that flows toward the cave exit.",
+          "vocabulary": {
+            "stream": "a small, narrow river"
+          },
+          "question": "How can you find the way out of the dark cave?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Follow the water stream", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "Climb up to the roof", "isCorrect": false, "scaffoldHint": "Read the end of the passage to see what goes toward the exit." }
+          ]
+        },
+        "5-6": {
+          "passage": "Inside the quiet cavern, glowing blue crystals light up the ceiling. Drops of water fall steadily from their tips, feeding a clear brook that winds toward the valley opening.",
+          "vocabulary": {
+            "steadily": "in a regular, even way",
+            "brook": "a small natural stream"
+          },
+          "question": "What natural clue guides you through the cavern?",
+          "skillType": "inference",
+          "options": [
+            { "text": "The direction the clear brook flows", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "The shadows cast by the rocks", "isCorrect": false, "scaffoldHint": "Check which feature leads toward the 'valley opening'." }
+          ]
+        },
+        "7-8": {
+          "passage": "Inside the dim cavern, glowing blue crystals illuminate the damp ceiling. Water drips steadily from their tips, feeding a narrow stream that winds straight toward the valley exit.",
+          "vocabulary": {
+            "illuminate": "to light up a dark space",
+            "steadily": "in a constant, even flow"
+          },
+          "question": "How can you navigate out of the cavern without a map?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Follow the flow of the underground stream toward the exit", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "Look for sunlight shining through cracks in the roof", "isCorrect": false, "scaffoldHint": "Trace where the 'narrow stream' winds in the second sentence." }
+          ]
+        }
+      }
+    },
+    "node_05a": {
+      "speaker": "Ice Bridge",
+      "variants": {
+        "3-4": {
+          "passage": "A wide crack blocks the ridge trail. A fallen pine tree lies across the gap. 'Walk slowly one at a time so the log does not bounce,' Eldrin says.",
+          "vocabulary": {
+            "gap": "an open space or break"
+          },
+          "question": "Why should you cross the log one at a time?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "To keep the log from bouncing", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Because the log is covered in thorns", "isCorrect": false, "scaffoldHint": "Read Eldrin's exact warning in the last sentence." }
+          ]
+        },
+        "5-6": {
+          "passage": "A deep crevasse splits the ridge path, bridged only by a fallen pine trunk. 'Cross individually and maintain steady balance,' Eldrin instructs, 'otherwise the timber could shift.'",
+          "vocabulary": {
+            "crevasse": "a deep open crack in ice or rock",
+            "individually": "one person at a time"
+          },
+          "question": "What risk does crossing together create?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "It could cause the log bridge to shift", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "It blocks Eldrin's view of the trail", "isCorrect": false, "scaffoldHint": "Look at what happens after the word 'otherwise'." }
+          ]
+        },
+        "7-8": {
+          "passage": "A deep crack splits the ridge trail, spanned only by a fallen pine trunk. 'Cross single-file to keep the weight balanced,' Eldrin warns, 'or the extra force could knock the log out of place.'",
+          "vocabulary": {
+            "spanned": "crossed or bridged from one side to the other",
+            "single-file": "in a line one person behind another"
+          },
+          "question": "Why does Eldrin tell you to cross single-file?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Too much weight at once could knock the log loose", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "The pine bark is too narrow for two boots", "isCorrect": false, "scaffoldHint": "Check what 'extra force' could do to the log in the final clause." }
+          ]
+        }
+      }
+    },
+    "node_05b": {
+      "speaker": "Cavern Bridge",
+      "variants": {
+        "3-4": {
+          "passage": "The cave stream reaches a wide pool with flat stepping stones. 'Step only on the dry gray stones,' Eldrin says. 'The wet black stones are covered in slick algae.'",
+          "vocabulary": {
+            "slick": "smooth and slippery"
+          },
+          "question": "Which stones are safe to step on?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "The dry gray stones", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "The wet black stones", "isCorrect": false, "scaffoldHint": "Re-read which stones Eldrin tells you to step on." }
+          ]
+        },
+        "5-6": {
+          "passage": "The underground brook widens into a shallow basin dotted with boulders. 'Avoid the dark, glossy rocks,' Eldrin warns. 'Thick moss makes them treacherous, whereas the pale granite boulders offer firm grip.'",
+          "vocabulary": {
+            "basin": "a wide, bowl-shaped hollow holding water",
+            "glossy": "shiny and smooth"
+          },
+          "question": "Why are the pale granite boulders a better choice?",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "They provide steady footing without slippery moss", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "They are closer to the cave ceiling", "isCorrect": false, "scaffoldHint": "Contrast the mossy dark rocks with the pale granite ones." }
+          ]
+        },
+        "7-8": {
+          "passage": "The cave stream widens into a shallow pool lined with stepping stones. 'Avoid the dark, shiny rocks,' Eldrin advises. 'Slippery algae coats their surface, while the rough gray stones provide reliable traction.'",
+          "vocabulary": {
+            "algae": "tiny green plants that grow in water and make rocks slippery",
+            "traction": "the grip of a shoe or surface that prevents slipping"
+          },
+          "question": "How do the rough gray stones differ from the dark rocks?",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Gray stones give good grip, while dark rocks are coated in slippery algae", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Gray stones sit much higher above the water", "isCorrect": false, "scaffoldHint": "Compare 'slippery algae' with 'reliable traction'." }
+          ]
+        }
+      }
+    },
+    "node_06": {
+      "speaker": "Campfire Shelter",
+      "variants": {
+        "3-4": {
+          "passage": "Both paths meet at a stone shelter halfway down the mountain. Inside is a stack of dry firewood and a note: 'Use only half the wood so the next travelers stay warm too.'",
+          "vocabulary": {
+            "shelter": "a place giving protection from weather"
+          },
+          "question": "Why does the note ask you to leave half the firewood?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "So future hikers also have wood for warmth", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Because the fireplace is too small", "isCorrect": false, "scaffoldHint": "Read the reason given after the word 'so' in the note." }
+          ]
+        },
+        "5-6": {
+          "passage": "Both trails converge at a stone waystation. Beside the hearth sits dry kindling with a carved plaque: 'Take only what you need; leave half the supply for stranded hikers who follow.'",
+          "vocabulary": {
+            "waystation": "a stopping place along a route",
+            "kindling": "small dry sticks used to start a fire"
+          },
+          "question": "What value does the plaque promote among mountain travelers?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Sharing resources to help future travelers survive", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Traveling without stopping at shelters", "isCorrect": false, "scaffoldHint": "Focus on why half the wood must remain behind." }
+          ]
+        },
+        "7-8": {
+          "passage": "Both routes meet at a stone shelter halfway down the peak. Next to the fireplace sits dry firewood with a carved sign: 'Use only half the supply; survival on this mountain depends on sharing resources with future hikers.'",
+          "vocabulary": {
+            "supply": "a stock of needed materials",
+            "resources": "useful materials like food, water, or firewood"
+          },
+          "question": "What main idea does the shelter's sign emphasize?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Sharing limited supplies helps everyone survive the mountain", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Fires should only be built during major snowstorms", "isCorrect": false, "scaffoldHint": "Look at the second half of the sign after the semicolon (;)." }
+          ]
+        }
+      }
+    },
+    "node_07": {
+      "speaker": "Eldrin the Mountain Guide",
+      "variants": {
+        "3-4": {
+          "passage": "After resting, Eldrin points toward two lower paths. 'The windy ruins are steep, while the stone tunnel is flat and quiet.' Which way do you go?",
+          "vocabulary": {
+            "ruins": "the broken remains of old buildings"
+          },
+          "question": "Choose your next path down:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Explore the Windy Ruins (Steep climb)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Walk through the Stone Tunnel (Flat and quiet)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Neither path leads toward the bottom", "isCorrect": false, "scaffoldHint": "Pick either the ruins or the stone tunnel to keep descending." }
+          ]
+        },
+        "5-6": {
+          "passage": "Refreshed from the break, you face two final routes. 'The wind-carved ruins require climbing steep steps,' Eldrin notes, 'whereas the carved tunnel offers a level, sheltered walkway.'",
+          "vocabulary": {
+            "whereas": "in contrast or comparison with",
+            "level": "flat and even"
+          },
+          "question": "Select your route toward the lower pass:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Wind-Carved Ruins (Steep stairway route)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Carved Tunnel (Flat, sheltered walkway)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both paths require steep rock climbing", "isCorrect": false, "scaffoldHint": "Check how the carved tunnel is described compared to the ruins." }
+          ]
+        },
+        "7-8": {
+          "passage": "Rested from your break, you look at two final paths down. 'The wind-carved ruins require navigating steep stone steps,' Eldrin explains, 'while the underground tunnel provides a flat, sheltered walkway.'",
+          "vocabulary": {
+            "navigating": "finding your way carefully across a route",
+            "sheltered": "protected from wind and weather"
+          },
+          "question": "Choose your route toward the mountain's base:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Wind-Carved Ruins (Steep stone steps)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Underground Tunnel (Flat, sheltered walkway)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both routes are steep and exposed to strong winds", "isCorrect": false, "scaffoldHint": "Notice how the tunnel is described as 'flat' and 'sheltered'." }
+          ]
+        }
+      }
+    },
+    "node_08a": {
+      "speaker": "Wind-Carved Ruins",
+      "variants": {
+        "3-4": {
+          "passage": "Among the old stone pillars, you find a brass sundial. Because the sun is setting in the west, the pointer's shadow stretches straight toward the east gate.",
+          "vocabulary": {
+            "stretches": "reaches or extends across"
+          },
+          "question": "Which direction does the shadow point?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "Toward the east gate", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Toward the west sunset", "isCorrect": false, "scaffoldHint": "Read the last four words of the passage." }
+          ]
+        },
+        "5-6": {
+          "passage": "Amid the ancient stone columns stands a weathered sundial. As the afternoon sun dips low in the west, the bronze needle casts a long shadow pointing directly toward the eastern archway.",
+          "vocabulary": {
+            "columns": "tall upright stone pillars",
+            "casts": "throws or projects light or shadow"
+          },
+          "question": "How does the sundial help you find the archway?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Its shadow lines up directly with the eastern gate", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "A map is carved onto the back of the needle", "isCorrect": false, "scaffoldHint": "Check what the bronze needle's shadow points toward." }
+          ]
+        },
+        "7-8": {
+          "passage": "Among the weathered stone pillars stands an old brass sundial. As the late afternoon sun sinks in the west, the pointer casts a long shadow pointing straight toward the eastern exit gate.",
+          "vocabulary": {
+            "weathered": "worn smooth or aged by wind and rain",
+            "casts": "projects a shadow onto a surface"
+          },
+          "question": "What clue helps you locate the exit out of the ruins?",
+          "skillType": "inference",
+          "options": [
+            { "text": "The setting sun makes the sundial's shadow point right at the east gate", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Bright sunlight reflects off brass tiles on the ground", "isCorrect": false, "scaffoldHint": "Focus on where the pointer's shadow is aimed." }
+          ]
+        }
+      }
+    },
+    "node_08b": {
+      "speaker": "Echoing Tunnel",
+      "variants": {
+        "3-4": {
+          "passage": "Along the tunnel wall, small arrows are painted in white chalk. Every arrow points downhill, showing the exact path to the valley gate.",
+          "vocabulary": {
+            "downhill": "going toward the bottom of a slope"
+          },
+          "question": "How do you know which way leads to the valley gate?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "Follow the white chalk arrows pointing downhill", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Count the number of steps between torches", "isCorrect": false, "scaffoldHint": "Check what is painted along the tunnel wall." }
+          ]
+        },
+        "5-6": {
+          "passage": "Carved along the smooth tunnel wall is a series of pale chalk arrows. Although several side passages branch off, the arrows consistently point downward toward the main valley gate.",
+          "vocabulary": {
+            "consistently": "always happening in the same way"
+          },
+          "question": "How can you avoid getting lost in the side passages?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Follow only the path marked by the downward arrows", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Take every left turn until you see daylight", "isCorrect": false, "scaffoldHint": "Read what reliably points toward the main valley gate." }
+          ]
+        },
+        "7-8": {
+          "passage": "Drawn along the smooth tunnel wall is a trail of white chalk arrows. Even though several dark side passages branch off, the arrows consistently point downhill toward the main valley gate.",
+          "vocabulary": {
+            "consistently": "reliably and in the same pattern every time",
+            "branch": "to split off in a new direction"
+          },
+          "question": "How can you avoid getting lost in the side tunnels?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Stick strictly to the route marked by the downward chalk arrows", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Follow the sound of rushing water down every side tunnel", "isCorrect": false, "scaffoldHint": "Check what reliably guides you toward the main valley gate." }
+          ]
+        }
+      }
+    },
+    "node_09": {
+      "speaker": "Guardian of the Pass",
+      "variants": {
+        "3-4": {
+          "passage": "A giant stone gate blocks the exit. Carved on the arch are the words: 'Only careful readers may pass. Look up: the blue lantern shines brightest when the truth is spoken.'",
+          "vocabulary": {
+            "carved": "cut into stone or wood"
+          },
+          "question": "What sign shows the gate is ready to open?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "The blue lantern above shines brightly", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "The stone gate sinks into the ground", "isCorrect": false, "scaffoldHint": "Read the sentence after 'Look up:' to find the exact sign." }
+          ]
+        },
+        "5-6": {
+          "passage": "Both routes meet at a towering stone gate. Etched across the arch is an inscription: 'Passage belongs to the observant. Gaze upward: the blue lantern ignites brightly whenever truth is spoken.'",
+          "vocabulary": {
+            "observant": "quick to notice details",
+            "ignites": "lights up or catches fire"
+          },
+          "question": "Which detail from the inscription proves the gate will unlock?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "The overhead blue lantern lights up brightly", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "The carved letters glow gold", "isCorrect": false, "scaffoldHint": "Check what happens after 'Gaze upward:'." }
+          ]
+        },
+        "7-8": {
+          "passage": "Both trails meet at a massive stone archway with a carved message: 'Passage is granted only to careful observers. Look upward: the blue lantern flares brightly when an accurate answer is given.'",
+          "vocabulary": {
+            "observers": "people who pay close attention to details",
+            "flares": "shines with a sudden bright light"
+          },
+          "question": "Which detail in the message confirms you have passed the gate's test?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "The blue lantern overhead flares with a bright light", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "The stone archway slides open automatically", "isCorrect": false, "scaffoldHint": "Check the exact sign described after 'Look upward:'." }
+          ]
+        }
+      }
+    },
+    "node_10": {
+      "speaker": "Eldrin the Mountain Guide",
+      "variants": {
+        "3-4": {
+          "passage": "The blue lantern flashes and the stone gate swings open! Warm sunlight fills the green valley below. 'You read every clue carefully,' Eldrin smiles. 'Your journey down Mount Aether is complete!'",
+          "vocabulary": {
+            "valley": "low land between hills or mountains"
+          },
+          "question": "How did you succeed in descending Mount Aether?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "By reading every clue and making smart choices", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "By guessing randomly at every fork", "isCorrect": false, "scaffoldHint": "Read Eldrin's compliment in the third sentence." }
+          ]
+        },
+        "5-6": {
+          "passage": "With a brilliant flash from the blue lantern, the heavy gate parts to reveal a sunlit valley below. 'Your careful attention to detail guided you safely down the peak,' Eldrin says proudly.",
+          "vocabulary": {
+            "reveal": "to make previously hidden things visible"
+          },
+          "question": "What does Eldrin say was the key to your safe descent?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Paying close attention to details along the trail", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Running down the mountain as fast as possible", "isCorrect": false, "scaffoldHint": "Check Eldrin's final statement about what guided you safely." }
+          ]
+        },
+        "7-8": {
+          "passage": "The blue lantern flashes brightly, and the heavy stone doors swing open to reveal a green valley below. 'Careful reading and sharp attention to every clue carried you safely off Mount Aether,' Eldrin says with a nod.",
+          "vocabulary": {
+            "reveal": "to uncover or bring into view",
+            "carried": "helped someone succeed or get through a challenge"
+          },
+          "question": "According to Eldrin, what made your journey down the mountain successful?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Reading carefully and paying attention to every clue", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Moving down the mountain faster than other hikers", "isCorrect": false, "scaffoldHint": "Read the qualities Eldrin credits in the second sentence." }
+          ]
+        }
+      }
+    }
+  }
+}

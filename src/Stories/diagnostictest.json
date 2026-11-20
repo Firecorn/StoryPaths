@@ -1,0 +1,110 @@
+{
+  "diagnosticId": "placement_v2",
+  "title": "Explorer Placement Assessment",
+  "scoringRules": {
+    "0-3": "3-4",
+    "4-6": "5-6",
+    "7-9": "7-8"
+  },
+  "questions": [
+    {
+      "id": "diag_01",
+      "targetBand": "3-4",
+      "passage": "Maya checked her compass twice before stepping onto the wooden bridge. Heavy rain had made the planks slick with moss.",
+      "question": "Why did Maya check her compass before crossing?",
+      "skillType": "literal_recall",
+      "options": [
+        { "text": "To make sure she was heading in the right direction", "isCorrect": true },
+        { "text": "To see if the rain had stopped", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_02",
+      "targetBand": "3-4",
+      "passage": "The desert fox sleeps inside cool underground burrows during the hot afternoon. At night, when the sand cools down, it comes out to hunt for insects.",
+      "question": "Why does the desert fox stay underground during the afternoon?",
+      "skillType": "cause_effect",
+      "options": [
+        { "text": "To stay cool away from the hot desert sun", "isCorrect": true },
+        { "text": "Because insects only fly during the daytime", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_03",
+      "targetBand": "3-4",
+      "passage": "Before planting seeds, Leo pulled out every weed in the garden box and mixed fresh compost into the soil so the young roots would have plenty of nutrients.",
+      "question": "What is the main idea of this passage?",
+      "skillType": "main_idea",
+      "options": [
+        { "text": "Leo prepared the garden soil so his seeds could grow well", "isCorrect": true },
+        { "text": "Weeds grow faster than vegetables in the spring", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_04",
+      "targetBand": "5-6",
+      "passage": "Although the tide was receding rapidly, Captain Lin ordered the crew to drop anchor outside the coral reef rather than risk scraping the hull on hidden shoals.",
+      "question": "What caused Captain Lin to stop outside the reef?",
+      "skillType": "inference",
+      "options": [
+        { "text": "Shallow underwater rocks could damage the ship", "isCorrect": true },
+        { "text": "The crew needed to rest after a long storm", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_05",
+      "targetBand": "5-6",
+      "passage": "Unlike clay bricks that bake in hot ovens, adobe bricks are dried naturally in the sun. Both materials build sturdy walls, yet adobe homes stay cooler during scorching summer days.",
+      "question": "How do adobe bricks differ from standard clay bricks?",
+      "skillType": "compare_contrast",
+      "options": [
+        { "text": "They are sun-dried instead of oven-baked and keep homes cooler", "isCorrect": true },
+        { "text": "They cannot be used to build sturdy walls", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_06",
+      "targetBand": "5-6",
+      "passage": "During winter migration, monarch butterflies travel thousands of miles south. Because no single butterfly lives long enough to complete the round trip, their offspring make the return journey in the spring.",
+      "question": "Which detail explains why the same butterfly does not fly back north?",
+      "skillType": "evidence_matching",
+      "options": [
+        { "text": "No single butterfly lives long enough to finish the round trip", "isCorrect": true },
+        { "text": "Spring winds blow too strongly for adult butterflies", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_07",
+      "targetBand": "7-8",
+      "passage": "While early stargazers thought unusual lights in the night sky were magical warnings, the observatory's brass star tracker proved that planets move in steady, predictable patterns.",
+      "question": "How does the author contrast early beliefs with what the star tracker proved?",
+      "skillType": "compare_contrast",
+      "options": [
+        { "text": "Superstition was replaced by predictable, measurable patterns", "isCorrect": true },
+        { "text": "Old brass tools proved more accurate than modern telescopes", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_08",
+      "targetBand": "7-8",
+      "passage": "When engineers designed the mountain railway, they built wide switchbacks instead of a straight track up the cliff. Although the winding route added three miles to the trip, it kept the slope gentle enough for heavy cargo trains to climb safely.",
+      "question": "What trade-off did the engineers accept when building the switchbacks?",
+      "skillType": "cause_effect",
+      "options": [
+        { "text": "A longer travel distance in exchange for a safer, gentler climb", "isCorrect": true },
+        { "text": "Faster train speeds at the cost of carrying less cargo", "isCorrect": false }
+      ]
+    },
+    {
+      "id": "diag_09",
+      "targetBand": "7-8",
+      "passage": "Archaeologists uncovering the sunken harbor noticed that the ancient stone breakwater still blocked rough ocean waves after two thousand years. By angling the stones against the prevailing current, the builders prevented storm surges from eroding the inner docks.",
+      "question": "What evidence shows the ancient builders understood ocean currents?",
+      "skillType": "evidence_matching",
+      "options": [
+        { "text": "They angled the breakwater stones against the current to protect the docks", "isCorrect": true },
+        { "text": "They built the harbor entirely underground away from waves", "isCorrect": false }
+      ]
+    }
+  ]
+}

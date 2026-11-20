@@ -1,0 +1,572 @@
+{
+  "questId": "quest_03_observatory",
+  "title": "The Clockwork Observatory",
+  "startingNodeId": "node_01",
+  "nodes": {
+    "node_01": {
+      "speaker": "Astronomer Vance",
+      "variants": {
+        "3-4": {
+          "passage": "You step inside a tall stone tower filled with giant brass gears. Astronomer Vance looks up at the closed roof dome. 'A big meteor shower starts at midnight,' he says. 'The metal roof is jammed, so we must fix the gears before then.'",
+          "vocabulary": {
+            "gears": "wheels with teeth that turn together inside a machine",
+            "jammed": "stuck and unable to move"
+          },
+          "question": "Why does Astronomer Vance need to fix the roof dome before midnight?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "So they can open the roof and watch the meteor shower", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "Because rain is leaking onto the brass gears", "isCorrect": false, "scaffoldHint": "Read Vance's first sentence to see what happens at midnight." }
+          ]
+        },
+        "5-6": {
+          "passage": "You enter an old hilltop observatory packed with ticking brass machinery. Astronomer Vance points toward the heavy iron roof dome. 'A rare meteor shower peaks at midnight, yet rusted gears have jammed the dome shut,' he explains. 'We need to restore power before the sky clears.'",
+          "vocabulary": {
+            "observatory": "a building equipped with telescopes for studying space",
+            "peaks": "reaches its highest or most active point"
+          },
+          "question": "What problem prevents Vance from observing the meteor shower?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Rusted gears have stuck the roof dome closed", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "The main telescope lens is missing", "isCorrect": false, "scaffoldHint": "Check what Vance says has jammed the dome shut." }
+          ]
+        },
+        "7-8": {
+          "passage": "You step inside a hilltop observatory filled with interlocking brass gears and star charts. Astronomer Vance gestures toward the sealed metal dome overhead. 'A rare meteor shower reaches its peak at midnight, but corroded gears have jammed the roof hatch,' he says. 'We must get the clockwork moving again before then.'",
+          "vocabulary": {
+            "corroded": "rusted or worn away over time",
+            "clockwork": "a system of gears and springs that powers a machine"
+          },
+          "question": "Why is repairing the clockwork urgent for Astronomer Vance?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "The jammed roof hatch blocks the sky right before a midnight meteor shower", "isCorrect": true, "nextNodeId": "node_02" },
+            { "text": "The tower's backup generator will run out of fuel at midnight", "isCorrect": false, "scaffoldHint": "Connect the 'jammed roof hatch' with the event happening at midnight." }
+          ]
+        }
+      }
+    },
+    "node_02": {
+      "speaker": "Astronomer Vance",
+      "variants": {
+        "3-4": {
+          "passage": "Before climbing the tower, Vance hands you a pair of dark tinted glasses. 'Never look directly at bright sparks or sunlight without eye protection,' he warns. 'Even a quick flash can hurt your eyes.'",
+          "vocabulary": {
+            "tinted": "colored or shaded to block bright light"
+          },
+          "question": "Why does Vance give you dark tinted glasses?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "To protect your eyes from bright sparks and glare", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "To help you read tiny writing in the dark", "isCorrect": false, "scaffoldHint": "Read Vance's warning in the second sentence." }
+          ]
+        },
+        "5-6": {
+          "passage": "Before starting repairs, Vance passes you a pair of dark protective goggles. 'Polished brass mirrors reflect intense beams of light,' he cautions. 'Shielding your eyes prevents sudden glare from blinding you while we work.'",
+          "vocabulary": {
+            "intense": "very strong or extreme",
+            "glare": "a harsh, dazzling light"
+          },
+          "question": "What hazard do the protective goggles prevent?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Bright light reflecting off brass mirrors hurting your eyes", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "Dust falling from the ceiling gears", "isCorrect": false, "scaffoldHint": "Check what Vance says polished brass mirrors reflect." }
+          ]
+        },
+        "7-8": {
+          "passage": "Before beginning repairs, Vance hands you a pair of tinted safety goggles. 'The observatory's polished brass mirrors concentrate bright beams of light,' he cautions. 'Wearing eye protection prevents sudden glare from impairing your vision.'",
+          "vocabulary": {
+            "concentrate": "to gather or focus into one strong beam",
+            "impairing": "weakening or damaging"
+          },
+          "question": "Why are tinted goggles necessary inside the observatory?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Focused light from the brass mirrors can temporarily blind or harm your eyes", "isCorrect": true, "nextNodeId": "node_03" },
+            { "text": "They filter out smoke from the lower boiler room", "isCorrect": false, "scaffoldHint": "Look at what the 'polished brass mirrors' do to beams of light." }
+          ]
+        }
+      }
+    },
+    "node_03": {
+      "speaker": "Astronomer Vance",
+      "variants": {
+        "3-4": {
+          "passage": "The main hall splits into two rooms. 'The waterwheel basement has cold puddles, so watch your step. The roof mirror deck is dry, yet the wind blows hard.' Which room will you check first?",
+          "vocabulary": {
+            "waterwheel": "a large wheel turned by flowing water to power machines"
+          },
+          "question": "Choose where to restart the tower's power:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Check the Waterwheel Basement (Wet floor, calm air)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Climb to the Roof Mirror Deck (Dry floor, strong wind)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both rooms are warm, dry, and quiet", "isCorrect": false, "scaffoldHint": "Vance warns about puddles in one room and strong wind on the other." }
+          ]
+        },
+        "5-6": {
+          "passage": "At the central staircase, Vance outlines two ways to restore power. 'The lower waterwheel chamber drives the main axle, though wet stone makes footing slick. Alternatively, the rooftop solar mirrors generate power cleanly, yet gusty winds sweep the balcony.'",
+          "vocabulary": {
+            "axle": "a central rod that turns wheels or gears",
+            "alternatively": "as another option or choice"
+          },
+          "question": "Pick your route based on Vance's comparison:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Lower Waterwheel Chamber (Slick stone, sheltered from wind)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Rooftop Solar Mirrors (Dry balcony, gusty winds)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Neither option helps power the roof dome", "isCorrect": false, "scaffoldHint": "Both systems restore power—pick either the waterwheel or the mirrors." }
+          ]
+        },
+        "7-8": {
+          "passage": "At the central landing, Vance compares two ways to power the dome: 'The underground waterwheel turns the main drive shaft, though damp stone makes footing slippery. On the other hand, the rooftop solar mirrors collect clean energy, yet strong gusts sweep across the open deck.'",
+          "vocabulary": {
+            "drive shaft": "a rotating rod that transfers power in a machine",
+            "gusts": "sudden, strong bursts of wind"
+          },
+          "question": "Select your route based on the trade-offs Vance describes:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Underground Waterwheel (Wind protection, slippery stone)", "isCorrect": true, "nextNodeId": "node_04a" },
+            { "text": "Rooftop Solar Mirrors (Dry footing, strong wind gusts)", "isCorrect": true, "nextNodeId": "node_04b" },
+            { "text": "Both areas are completely protected from wind and water", "isCorrect": false, "scaffoldHint": "Compare 'damp stone' in the basement with 'strong gusts' on the open deck." }
+          ]
+        }
+      }
+    },
+    "node_04a": {
+      "speaker": "Waterwheel Chamber",
+      "variants": {
+        "3-4": {
+          "passage": "In the basement, an iron gate blocks the stream feeding the waterwheel. A painted sign says: 'Pull the blue lever to open the water gate; pull the red lever to sound the fire alarm.'",
+          "vocabulary": {
+            "lever": "a handle you pull or push to operate a machine"
+          },
+          "question": "Which lever lets water flow to the wheel?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "The blue lever", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "The red lever", "isCorrect": false, "scaffoldHint": "Read what the sign says about the blue lever versus the red lever." }
+          ]
+        },
+        "5-6": {
+          "passage": "Inside the damp wheelhouse, a heavy sluice gate blocks the millstream. A brass instruction plate reads: 'Engage the cobalt lever to flood the wheel race; engage the scarlet lever only for emergency drainage.'",
+          "vocabulary": {
+            "cobalt": "a deep blue color",
+            "drainage": "the process of emptying out water"
+          },
+          "question": "How do you send water flowing onto the waterwheel?",
+          "skillType": "inference",
+          "options": [
+            { "text": "Pull the blue cobalt lever", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Pull the red scarlet lever", "isCorrect": false, "scaffoldHint": "Check which lever floods the wheel race rather than draining water." }
+          ]
+        },
+        "7-8": {
+          "passage": "Down in the wheelhouse, a heavy metal gate holds back the underground stream. A brass plaque reads: 'Pull the blue lever to release water onto the wheel; pull the red lever to drain the chamber completely.'",
+          "vocabulary": {
+            "release": "to let go or allow to flow freely",
+            "chamber": "an enclosed room or space"
+          },
+          "question": "Which action will start turning the waterwheel?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "Pulling the blue lever to release the stream onto the wheel", "isCorrect": true, "nextNodeId": "node_05a" },
+            { "text": "Pulling the red lever to empty the room", "isCorrect": false, "scaffoldHint": "Read the first half of the brass plaque before the semicolon (;)." }
+          ]
+        }
+      }
+    },
+    "node_04b": {
+      "speaker": "Solar Mirror Deck",
+      "variants": {
+        "3-4": {
+          "passage": "On the windy roof deck, three round mirrors are covered in gray dust. 'Dust blocks the light,' Vance says. 'Wipe the glass with a soft cloth so the beam can bounce into the tower.'",
+          "vocabulary": {
+            "bounce": "to reflect or spring back off a surface"
+          },
+          "question": "Why do you need to wipe the mirrors with a soft cloth?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "To remove the dust blocking the light beam", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "To cool down the hot metal frames", "isCorrect": false, "scaffoldHint": "Read Vance's first sentence to see what is blocking the light." }
+          ]
+        },
+        "5-6": {
+          "passage": "Out on the open balcony, three brass collector mirrors are coated in thick soot. 'Grime scatters the light rays instead of focusing them,' Vance explains. 'Polish the surfaces clean so the beam reaches the central prism.'",
+          "vocabulary": {
+            "soot": "black powdery dust left by smoke",
+            "scatters": "throws or spreads in many different directions"
+          },
+          "question": "How does cleaning the mirrors restore the light beam?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Clean glass focuses the light straight into the prism instead of scattering it", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "Polishing heats up the glass so it glows on its own", "isCorrect": false, "scaffoldHint": "Contrast what grime does ('scatters the light') with what clean surfaces do." }
+          ]
+        },
+        "7-8": {
+          "passage": "Out on the breezy roof deck, three large collector mirrors are coated in gray dust. 'Dirt scatters incoming light instead of reflecting a straight beam,' Vance explains. 'Wipe the glass clean so the light focuses directly onto the tower's main sensor.'",
+          "vocabulary": {
+            "scatters": "spreads light in random directions",
+            "sensor": "a device that detects light or heat"
+          },
+          "question": "Why does dust stop the mirrors from powering the tower?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "It scatters the light instead of reflecting a focused beam onto the sensor", "isCorrect": true, "nextNodeId": "node_05b" },
+            { "text": "The extra weight of the dust stops the mirrors from rotating", "isCorrect": false, "scaffoldHint": "Read Vance's first sentence about what dirt does to incoming light." }
+          ]
+        }
+      }
+    },
+    "node_05a": {
+      "speaker": "Gear Shaft",
+      "variants": {
+        "3-4": {
+          "passage": "The waterwheel starts spinning, but a broken wooden stick is wedged between two iron gears. 'Turn off the water for a moment before pulling the stick out,' Vance says, 'so the gears do not pinch your fingers.'",
+          "vocabulary": {
+            "wedged": "stuck tightly in a narrow space"
+          },
+          "question": "Why should you stop the wheel before removing the stuck stick?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "To keep the moving gears from hurting your hands", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Because the stick is floating in the water", "isCorrect": false, "scaffoldHint": "Read the end of Vance's sentence after the word 'so'." }
+          ]
+        },
+        "5-6": {
+          "passage": "Water rushes over the paddles, yet a fallen branch jams the main drive gears. 'Pause the water flow before clearing the debris,' Vance warns, 'otherwise the sudden release of tension could snap the teeth forward.'",
+          "vocabulary": {
+            "debris": "scattered pieces of waste or broken wood",
+            "tension": "tight strain or pressure inside a machine"
+          },
+          "question": "What danger exists if you pull the branch out while water is still pushing the wheel?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "The gears could snap forward suddenly once freed", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Cold water will flood the entire stairwell", "isCorrect": false, "scaffoldHint": "Look at what happens after the word 'otherwise' in Vance's warning." }
+          ]
+        },
+        "7-8": {
+          "passage": "The waterwheel begins to turn, but a thick wooden branch is wedged tightly between two iron gears. 'Shut off the water flow before clearing the jam,' Vance warns, 'or the built-up pressure will make the gears lurch forward suddenly.'",
+          "vocabulary": {
+            "wedged": "jammed tightly between two surfaces",
+            "lurch": "to make a sudden, uncontrolled movement forward"
+          },
+          "question": "Why does Vance insist on stopping the water before removing the branch?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Built-up pressure could cause the gears to jerk forward dangerously", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "Running water makes the wooden branch too slippery to grip", "isCorrect": false, "scaffoldHint": "Check what 'built-up pressure' will do to the gears in the final clause." }
+          ]
+        }
+      }
+    },
+    "node_05b": {
+      "speaker": "Prism Alignment",
+      "variants": {
+        "3-4": {
+          "passage": "The clean mirrors shine a bright beam onto a glass triangle called a prism. 'Tilt the prism slowly until the light hits the gold circle on the wall,' Vance instructs.",
+          "vocabulary": {
+            "prism": "a clear glass shape that bends and directs light"
+          },
+          "question": "Where must the light beam land to power the tower?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "On the gold circle on the wall", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "On the wooden floor tiles", "isCorrect": false, "scaffoldHint": "Read Vance's instructions to see what target the light must hit." }
+          ]
+        },
+        "5-6": {
+          "passage": "The polished mirrors direct a bright beam onto a three-sided crystal prism. 'Rotate the prism carefully until the refracted beam strikes the brass collector plate,' Vance instructs, 'which converts light into mechanical energy.'",
+          "vocabulary": {
+            "refracted": "bent as it passes through glass or water",
+            "converts": "changes from one form into another"
+          },
+          "question": "What happens once the light beam hits the brass collector plate?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "The plate turns the light energy into power for the machines", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "The crystal prism melts from the heat", "isCorrect": false, "scaffoldHint": "Read the final clause explaining what the collector plate does." }
+          ]
+        },
+        "7-8": {
+          "passage": "The clean mirrors focus a bright beam onto a glass prism. 'Adjust the prism slowly until the light hits the gold collector plate,' Vance instructs, 'which converts the solar beam into power for the clockwork.'",
+          "vocabulary": {
+            "adjust": "to move or change slightly to get the right fit",
+            "converts": "changes energy from one form to another"
+          },
+          "question": "What is the role of the gold collector plate?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "It turns the focused light beam into power for the observatory's gears", "isCorrect": true, "nextNodeId": "node_06" },
+            { "text": "It reflects the light back outside to signal nearby ships", "isCorrect": false, "scaffoldHint": "Check the final clause describing what the collector plate does with the beam." }
+          ]
+        }
+      }
+    },
+    "node_06": {
+      "speaker": "Star Chart Library",
+      "variants": {
+        "3-4": {
+          "passage": "Power returns to the tower! You meet Vance in the round library. A sign above the bookshelves reads: 'Return every star scroll to its numbered slot so astronomers can find them quickly.'",
+          "vocabulary": {
+            "scroll": "a rolled-up sheet of paper or parchment"
+          },
+          "question": "Why must star scrolls go back into their numbered slots?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "So other astronomers can find the right maps fast", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Because the scrolls will unroll on the floor", "isCorrect": false, "scaffoldHint": "Read the reason given after the word 'so' on the library sign." }
+          ]
+        },
+        "5-6": {
+          "passage": "With power humming through the tower, you join Vance in the circular archive. A brass placard above the shelves states: 'File every star chart in its numbered slot; accurate organization prevents costly delays during timed observations.'",
+          "vocabulary": {
+            "archive": "a room where historical records or maps are stored",
+            "observations": "careful watching and recording of events in nature"
+          },
+          "question": "What main point does the library placard make?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Keeping charts organized saves critical time during sky watching", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "Old star charts should never be removed from the shelves", "isCorrect": false, "scaffoldHint": "Focus on why 'accurate organization' matters according to the placard." }
+          ]
+        },
+        "7-8": {
+          "passage": "With power humming through the gears, you meet Vance in the circular library. A brass sign above the shelves reads: 'Return every star chart to its numbered slot; proper organization prevents wasted time during brief sky events.'",
+          "vocabulary": {
+            "brief": "lasting only a short time",
+            "organization": "the arrangement of items in a neat, orderly system"
+          },
+          "question": "Why is keeping the star charts organized especially important in an observatory?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Sky events happen quickly, so astronomers cannot waste time searching for maps", "isCorrect": true, "nextNodeId": "node_07" },
+            { "text": "The numbered slots protect the paper from bright sunlight", "isCorrect": false, "scaffoldHint": "Read the second half of the sign after the semicolon (;)." }
+          ]
+        }
+      }
+    },
+    "node_07": {
+      "speaker": "Astronomer Vance",
+      "variants": {
+        "3-4": {
+          "passage": "To reach the top dome, Vance points to two ways up. 'The brass elevator is smooth, while the iron spiral stairs let you see the clock gears up close.' Which way do you go?",
+          "vocabulary": {
+            "elevator": "a moving platform or box that carries people up and down"
+          },
+          "question": "Choose how to climb to the observatory dome:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Ride the Brass Elevator (Smooth ride)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Climb the Iron Spiral Stairs (Close view of the gears)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Neither way goes up to the roof dome", "isCorrect": false, "scaffoldHint": "Both options take you up—pick either the elevator or the stairs." }
+          ]
+        },
+        "5-6": {
+          "passage": "To reach the upper dome, Vance points to two options. 'The counterweighted brass lift offers a effortless ride,' he says, 'whereas the iron spiral staircase lets us inspect the main clockwork mechanism along the way.'",
+          "vocabulary": {
+            "mechanism": "a system of moving parts working together in a machine",
+            "inspect": "to look at something closely and carefully"
+          },
+          "question": "Select your route to the observatory dome:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Brass Lift (Effortless ride to the top)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Iron Spiral Staircase (Lets you inspect the gears)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both options require climbing ladders outside", "isCorrect": false, "scaffoldHint": "Compare the brass lift with the interior spiral staircase." }
+          ]
+        },
+        "7-8": {
+          "passage": "To reach the top observation dome, Vance points out two ways up: 'The brass lift provides a quick, easy ride,' he notes, 'while the iron spiral staircase lets us check the main clockwork gears as we climb.'",
+          "vocabulary": {
+            "observation": "the act of watching the sky or stars carefully",
+            "spiral": "winding upward in a circle around a central pole"
+          },
+          "question": "Choose your route up to the dome:",
+          "skillType": "compare_contrast",
+          "options": [
+            { "text": "Brass Lift (Quick, easy ride)", "isCorrect": true, "nextNodeId": "node_08a" },
+            { "text": "Iron Spiral Staircase (Lets you check the clockwork gears)", "isCorrect": true, "nextNodeId": "node_08b" },
+            { "text": "Both routes are currently out of order", "isCorrect": false, "scaffoldHint": "Pick either the brass lift or the iron spiral staircase." }
+          ]
+        }
+      }
+    },
+    "node_08a": {
+      "speaker": "Brass Elevator",
+      "variants": {
+        "3-4": {
+          "passage": "Inside the brass elevator, a heavy stone weight hangs on a chain outside the cage. As the stone goes down, the elevator goes up smoothly without using electricity.",
+          "vocabulary": {
+            "cage": "the enclosed frame of an elevator"
+          },
+          "question": "How does the elevator move upward without electricity?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "A heavy falling stone pulls the elevator up on a chain", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Strong wind pushes the elevator from underneath", "isCorrect": false, "scaffoldHint": "Read the second sentence to see what happens as the stone goes down." }
+          ]
+        },
+        "5-6": {
+          "passage": "Rising inside the brass lift, you watch a massive stone counterweight descend along an exterior chain. By balancing the weight of the passenger cage, gravity pulls the lift upward smoothly.",
+          "vocabulary": {
+            "counterweight": "a heavy weight used to balance another weight",
+            "descend": "to move downward"
+          },
+          "question": "What force powers the brass lift's upward movement?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Gravity pulling down on a heavy stone counterweight", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Steam pressure building beneath the floor", "isCorrect": false, "scaffoldHint": "Check the second sentence to see what pulls the lift upward." }
+          ]
+        },
+        "7-8": {
+          "passage": "As the brass lift rises, you watch a heavy stone counterweight slide downward on a thick chain outside the frame. By balancing the lift's weight, gravity pulls your platform upward smoothly without needing motors.",
+          "vocabulary": {
+            "counterweight": "a heavy weight that balances an equal load on the other end",
+            "frame": "the surrounding metal structure of the lift"
+          },
+          "question": "How does the counterweight allow the lift to rise without motors?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "As gravity pulls the heavy stone down, the balanced chain pulls the lift up", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "The stone heats up the chain to create magnetic lift", "isCorrect": false, "scaffoldHint": "Read the second sentence explaining how gravity and balance move the platform." }
+          ]
+        }
+      }
+    },
+    "node_08b": {
+      "speaker": "Clockwork Staircase",
+      "variants": {
+        "3-4": {
+          "passage": "Climbing the spiral stairs, you see a giant pendulum swinging back and forth. Every swing takes exact one second, keeping the observatory's star clocks on time.",
+          "vocabulary": {
+            "pendulum": "a swinging weight hanging from a rod inside a clock"
+          },
+          "question": "What does the giant swinging pendulum do?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "It keeps the observatory's clocks on the exact time", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "It rings a loud bell every five minutes", "isCorrect": false, "scaffoldHint": "Read the end of the second sentence to see what the pendulum does." }
+          ]
+        },
+        "5-6": {
+          "passage": "Ascending the iron staircase, you pass a massive brass pendulum swinging in a steady arc. Each complete swing measures exactly one second, regulating the gears that track the stars' movement.",
+          "vocabulary": {
+            "arc": "a curved path",
+            "regulating": "controlling or keeping at a steady speed"
+          },
+          "question": "Why is the pendulum's steady swing important to the observatory?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "It controls the timing of the gears that track the stars", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "It pumps fresh air up to the top dome", "isCorrect": false, "scaffoldHint": "Check what the pendulum regulates in the second sentence." }
+          ]
+        },
+        "7-8": {
+          "passage": "Climbing the iron staircase, you pass a large brass pendulum swinging in a steady rhythm. Each swing takes exactly one second, controlling the speed of the gears that track the movement of the stars.",
+          "vocabulary": {
+            "pendulum": "a hanging weight that swings back and forth at a steady rate",
+            "rhythm": "a strong, regular, repeated pattern of movement"
+          },
+          "question": "How does the pendulum help astronomers track the stars?",
+          "skillType": "cause_effect",
+          "options": [
+            { "text": "Its steady one-second swings keep the star-tracking gears moving at the right speed", "isCorrect": true, "nextNodeId": "node_09" },
+            { "text": "Its shiny brass surface reflects starlight onto the staircase", "isCorrect": false, "scaffoldHint": "Read what the one-second swings control in the second sentence." }
+          ]
+        }
+      }
+    },
+    "node_09": {
+      "speaker": "Dome Control Console",
+      "variants": {
+        "3-4": {
+          "passage": "At the top of the tower sits a giant brass telescope under the closed dome. A metal plate reads: 'To open the roof hatch, set the north dial to midnight and pull the starter ring.'",
+          "vocabulary": {
+            "hatch": "an opening or door in a roof or floor"
+          },
+          "question": "How do you open the observatory's roof hatch?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Set the north dial to midnight and pull the starter ring", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Spin the telescope lens three times to the left", "isCorrect": false, "scaffoldHint": "Read the exact steps inside the quotation marks on the metal plate." }
+          ]
+        },
+        "5-6": {
+          "passage": "Both routes meet beneath the closed iron dome beside a gleaming brass telescope. Engraved on the control console is a directive: 'To unlatch the dome shutter, align the north dial with midnight and pull the starter ring.'",
+          "vocabulary": {
+            "shutter": "a movable cover that opens and closes over an opening",
+            "unlatch": "to unlock or release a catch"
+          },
+          "question": "Which steps unlatch the dome shutter?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Aligning the north dial with midnight and pulling the starter ring", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Turning on the electric lamps around the room", "isCorrect": false, "scaffoldHint": "Check the exact instructions after 'To unlatch the dome shutter:'." }
+          ]
+        },
+        "7-8": {
+          "passage": "Both paths meet at the top floor beside a giant brass telescope. Carved into the control console is an instruction: 'To open the dome hatch, set the north dial to midnight and pull the starter ring.'",
+          "vocabulary": {
+            "console": "a panel containing controls and dials for a machine",
+            "hatch": "a sliding door in a roof or ceiling"
+          },
+          "question": "According to the control console, what two actions open the dome hatch?",
+          "skillType": "evidence_matching",
+          "options": [
+            { "text": "Set the north dial to midnight and pull the starter ring", "isCorrect": true, "nextNodeId": "node_10" },
+            { "text": "Unlock the iron bolts and push the roof open by hand", "isCorrect": false, "scaffoldHint": "Read the exact instruction inside the quotation marks." }
+          ]
+        }
+      }
+    },
+    "node_10": {
+      "speaker": "Astronomer Vance",
+      "variants": {
+        "3-4": {
+          "passage": "With a smooth whir of brass gears, the metal roof slides open! Streaks of bright shooting stars flash across the dark midnight sky. 'You solved every clue right on time,' Vance smiles. 'Quest complete!'",
+          "vocabulary": {
+            "whir": "a low, continuous buzzing or humming sound"
+          },
+          "question": "What appears in the sky once the roof slides open?",
+          "skillType": "literal_recall",
+          "options": [
+            { "text": "Bright shooting stars streaking across the midnight sky", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Thick gray rain clouds blocking the moon", "isCorrect": false, "scaffoldHint": "Read the second sentence to see what flashes across the sky." }
+          ]
+        },
+        "5-6": {
+          "passage": "With a steady hum of interlocking gears, the iron dome parts to reveal a dazzling meteor shower streaking across the midnight sky. 'Your careful reading and problem-solving brought the observatory back to life,' Vance says proudly.",
+          "vocabulary": {
+            "dazzling": "extremely bright and impressive"
+          },
+          "question": "What does Vance say brought the observatory back to life?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Your careful reading and problem-solving at every step", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Waiting until the wind blew the roof open", "isCorrect": false, "scaffoldHint": "Check Vance's final statement in the second sentence." }
+          ]
+        },
+        "7-8": {
+          "passage": "With a smooth hum of interlocking gears, the metal dome slides open to reveal dozens of bright meteors streaking across the midnight sky. 'Careful reading and sharp attention to every clue got the observatory working right on schedule,' Vance says with a smile.",
+          "vocabulary": {
+            "meteors": "streaks of light in the sky caused by space rocks burning up",
+            "schedule": "a plan for carrying out a process at the right time"
+          },
+          "question": "According to Vance, what enabled the team to open the dome on schedule?",
+          "skillType": "main_idea",
+          "options": [
+            { "text": "Careful reading and paying close attention to every clue", "isCorrect": true, "nextNodeId": "victory" },
+            { "text": "Forcing the jammed roof gears open with heavy tools", "isCorrect": false, "scaffoldHint": "Read the qualities Vance credits in the final sentence." }
+          ]
+        }
+      }
+    }
+  }
+}
