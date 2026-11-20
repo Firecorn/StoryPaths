@@ -1,15 +1,15 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Screen from '../components/Screen.jsx';
 import {
   AlertIcon, BugIcon, ChevronRight, LockIcon, LogoutIcon, PersonIcon,
   QuestionIcon, ShareIcon, StarIcon, TrashIcon,
 } from '../components/Icons.jsx';
 import { useGame } from '../context/GameContext.jsx';
+import { authMessage } from '.../lib/authErrors.js';
 
 // Design: Profile > settings list
 export default function Profile() {
-  const { signOut, deleteAccount } = useGame();
-  const navigate = useNavigate();
+  const { logOut, deleteAccount } = useGame();
 
   const share = async () => {
     const data = { title: 'Clarity Quest', text: 'Read your way up the mountain!', url: window.location.origin };
@@ -24,16 +24,17 @@ export default function Profile() {
     }
   };
 
-  const logout = () => {
-    signOut();
-    navigate('/');
-  };
+  // After either of these Firebase signs the student out and <RequireAuth> in App.jsx returns them to the splash screen.
+  const logout = () => logOut();
 
-  const remove = () => {
-    if (window.confirm('Delete your account and all progress? This cannot be undone.')) {
-      // TODO: call your delete-account API first.
-      deleteAccount();
-      navigate('/');
+  const remove = async () => {
+    if (!window.confirm('Delete your account and all progress? This cannot be undone.')) return;
+    const password = window.prompt('Type your password to confirm:');
+    if (!password) return;
+    try {
+      await deleteAccount(password);
+    } catch (err) {
+      alert(authMessage(err));
     }
   };
 

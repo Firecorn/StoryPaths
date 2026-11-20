@@ -645,3 +645,48 @@
   text-decoration: underline;
   color: var(--red);
 }
+
+/* ================= Auth errors / loading ================= */
+.form-error {
+  min-height: 1.3em;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--red);
+}
+.form-error--light {
+  color: #fff;
+  margin-top: 6px;
+}
+.btn:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+.splash {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  gap: 12px;
+}
+.splash code {
+  background: var(--butter);
+  padding: 1px 6px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: 100%;
+  max-width: var(--app-width);
+  padding: 8px 16px;
+  background: var(--red-deep);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
