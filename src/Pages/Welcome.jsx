@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
-import Mascot from '../components/Mascot.jsx';
 import { Clouds } from '../components/AuthParts.jsx';
 
 // Design: "Hi There!" splash
 export default function Welcome() {
   return (
     <div className="app auth">
-      <section className="auth__hero">
-        <h1 className="auth__hello">Hi There!</h1>
-        <Mascot variant="leaf" size={250} className="auth__mascot" />
+      <section className="auth__hero auth__hero--art">
+        <h1 className="sr-only">Hi There!</h1>
+        <img className="auth__art" src="/assets/mascot-leaf.png" alt="" />
       </section>
 
       <div className="auth__actions">

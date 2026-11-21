@@ -468,7 +468,6 @@
   color: var(--red);
 }
 
-/* ================= Notes ================= */
 .wordcard {
   position: relative;
   padding: 14px 20px 14px;
@@ -564,7 +563,6 @@
   line-height: 1.45;
 }
 
-/* ================= Profile ================= */
 .settings {
   list-style: none;
   margin: 0;
@@ -634,9 +632,8 @@
   color: var(--ink);
 }
 
-/* ================= Diagnostic / no-tab-bar screens ================= */
 .app--nonav {
-  --nav-height: 0px; /* chat footer sits at the very bottom when there is no tab bar */
+  --nav-height: 0px; 
 }
 .linkbtn {
   align-self: center;
@@ -646,7 +643,6 @@
   color: var(--red);
 }
 
-/* ================= Auth errors / loading ================= */
 .form-error {
   min-height: 1.3em;
   margin: 0;
@@ -689,4 +685,24 @@
   color: #fff;
   font-size: 14px;
   text-align: center;
+}
+.auth__hero--art {
+  min-height: 0;
+  padding: 0 0 28px;
+  overflow: hidden;
+  background: #b2422d;
+}
+.auth__art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.auth__link--light {
+  display: block;
+  margin-top: 22px;
+  color: var(--cream);
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: underline;
 }

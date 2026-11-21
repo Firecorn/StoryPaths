@@ -26,21 +26,21 @@ export default function Login() {
   };
 
   return (
-    <div className="app auth">
-      <section className="auth__hero auth__hero--compact">
-        <BackLink tone="dark" />
-        <h1 className="auth__title">Welcome <strong>Back!</strong></h1>
-        <Mascot variant="happy" size={170} className="auth__mascot" />
-      </section>
+    <div className="app signup">
+      <div className="signup__top">
+        <BackLink />
+        <h1 className="signup__title">Welcome<br />Back!</h1>
+        <Mascot variant="login" size={200} className="signup__mascot" />
+      </div>
 
-      <form className="auth__form" onSubmit={submit}>
-        <Field label="Email Address" type="email" required value={form.email} onChange={set('email')} placeholder="hello@reallygreatsite.com" autoComplete="email" />
-        <Field label="Password" type="password" required value={form.password} onChange={set('password')} placeholder="••••••••" autoComplete="current-password" />
-        <p className="form-error" role="alert">{error}</p>
-        <button className="btn btn--solid" type="submit" disabled={busy}>{busy ? 'Logging in…' : 'Login'}</button>
-        <Link className="auth__link" to="/forgot-password">Forgot your password?</Link>
+      <form className="signup__sheet" onSubmit={submit}>
+        <Field tone="dark" label="Email Address" type="email" required value={form.email} onChange={set('email')} placeholder="hello@reallygreatsite.com" autoComplete="email" />
+        <Field tone="dark" label="Password" type="password" required value={form.password} onChange={set('password')} placeholder="••••••••" autoComplete="current-password" />
+        <p className="form-error form-error--light" role="alert">{error}</p>
+        <button className="btn btn--cream" type="submit" disabled={busy}>{busy ? 'SIGNING IN…' : 'SIGN IN'}</button>
+        <Link className="auth__link auth__link--light" to="/forgot-password">Forgot Password?</Link>
       </form>
-      <Clouds />
+      <Clouds color="var(--cream)" />
     </div>
   );
 }

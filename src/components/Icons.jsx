@@ -68,13 +68,13 @@ export const QuestionIcon = (p) => (
   <img src="/assets/question.png" width="24" height="24" alt="" {...p} />
 );
 export const BugIcon = (p) => (
-  <img src="/assets/bug.png" width="24" height="24" alt="" {...p} />
+  <img src="/assets/bug.png" width="23" height="24" alt="" {...p} />
 );
 export const AlertIcon = (p) => (
-  <img src="/assets/alert.png" width="24" height="24" alt="" {...p} />
+  <img src="/assets/alert.png" width="30" height="24" alt="" {...p} />
 );
 export const LockIcon = (p) => (
-  <img src="/assets/lock.png" width="24" height="24" alt="" {...p} />
+  <img src="/assets/lock.png" width="23" height="24" alt="" {...p} />
 );
 export const StarIcon = (p) => (
   <img src="/assets/star.png" width="24" height="24" alt="" {...p} />
